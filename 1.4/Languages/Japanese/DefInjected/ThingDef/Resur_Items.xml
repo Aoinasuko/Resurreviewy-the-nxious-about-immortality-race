@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 素材 -->
+
+  <Resur_Syringe.label>Resur 注射器</Resur_Syringe.label>
+  <Resur_Syringe.description>リザレビューイの血を抜くための注射器です.</Resur_Syringe.description>
+  <Resur_Syringe.comps.0.useLabel>{0_label}を使う</Resur_Syringe.comps.0.useLabel>
+
+  <Resur_BloodSyringe.label>Resur 血液注射器</Resur_BloodSyringe.label>
+  <Resur_BloodSyringe.description>リザレビューイの血を入れた注射器です.</Resur_BloodSyringe.description>
+
+
+  <!-- 回復薬 -->
+
+  <Resur_SmallHealer.label>Resur 軽症治癒機</Resur_SmallHealer.label>
+  <Resur_SmallHealer.description>リザレビューイの血に込められた再生能力を用いて軽い傷を治癒します.\n\n全ての傷跡と治癒可能な傷を10.0ポイント回復します.\n\n低い確率で,サイキック性の気分の低下を長時間引き起こします.</Resur_SmallHealer.description>
+  <Resur_SmallHealer.comps.0.useLabel>{0_label}を使う</Resur_SmallHealer.comps.0.useLabel>
+
+  <Resur_MidHealer.label>Resur 重症治癒機</Resur_MidHealer.label>
+  <Resur_MidHealer.description>リザレビューイの血に込められた再生能力を用いて治癒します.\n\n最大HPが15以下の,欠損している部位を全て元に戻します.\n全ての傷跡と治癒可能な傷を30.0ポイント回復します.\n\nやや低い確率で,サイキック性の気分の低下を長時間引き起こします.</Resur_MidHealer.description>
+  <Resur_MidHealer.comps.0.useLabel>{0_label}を使う</Resur_MidHealer.comps.0.useLabel>
+
+  <Resur_HighHealer.label>Resur 致命傷治癒機</Resur_HighHealer.label>
+  <Resur_HighHealer.description>リザレビューイの血に込められた再生能力を用いて最大限の治癒を行います.\n\n全ての致命的な病気を治癒します.\n最大HPが500以下の,欠損している部位を全て元に戻します.\n全ての傷跡と治癒可能な傷を100.0ポイント回復します.\n\nそこそこの確率で,サイキック性の気分の低下を長時間引き起こします.</Resur_HighHealer.description>
+  <Resur_HighHealer.comps.0.useLabel>{0_label}を使う</Resur_HighHealer.comps.0.useLabel>
+
+
+  <!-- 不老不死の薬 -->
+
+  <Resur_ElixirofEternalLife.label>Resur 不老不死の薬</Resur_ElixirofEternalLife.label>
+  <Resur_ElixirofEternalLife.description>接種する事で年を取らなくなり,死ななくなる薬です.</Resur_ElixirofEternalLife.description>
+  <Resur_ElixirofEternalLife.comps.0.useLabel>{0_label}を使う</Resur_ElixirofEternalLife.comps.0.useLabel>
+
+  <Resur_AntidoteofEternalLife.label>Resur 不老不死の解毒薬</Resur_AntidoteofEternalLife.label>
+  <Resur_AntidoteofEternalLife.description>接種する事で不老不死の効能を消す薬です.\nただし,遺伝子由来の不老不死に関しては一切の影響を与えません.</Resur_AntidoteofEternalLife.description>
+  <Resur_AntidoteofEternalLife.comps.0.useLabel>{0_label}を使う</Resur_AntidoteofEternalLife.comps.0.useLabel>
+
+
+</LanguageData>

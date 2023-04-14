@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<PawnKindDef>
+		<defName>Resurreviewy_Visitor</defName>
+		<label>Resurreviewy Visitor</label>
+		<isFighter>false</isFighter>
+		<combatPower>200</combatPower>
+		<itemQuality>Normal</itemQuality>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>false</forceNormalGearQuality>
+		<race>Resurreviewy_Pawn</race>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Resur_Story_Normal</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<styleItemTags>
+			<li>
+				<tag>Resurreviewy</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+		<apparelTags>
+			<li>Resur_Apparel</li>
+		</apparelTags>
+		<apparelMoney>0~1000</apparelMoney>
+		<minGenerationAge>10</minGenerationAge>
+		<maxGenerationAge>100</maxGenerationAge>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<invNutrition>2</invNutrition>
+		<invFoodDef>Pemmican</invFoodDef>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>1~3</initialResistanceRange>
+		<defaultFactionType>Resur_WildResurreviewy</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef>
+		<defName>Resurreviewy_Slave</defName>
+		<label>Resurreviewy Slave</label>
+		<isFighter>false</isFighter>
+		<combatPower>200</combatPower>
+		<itemQuality>Normal</itemQuality>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>false</forceNormalGearQuality>
+		<race>Resurreviewy_Pawn</race>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Resur_Story_Normal</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<styleItemTags>
+			<li>
+				<tag>Resurreviewy</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+		<apparelTags>
+			<li>Resur_Apparel_Slave</li>
+		</apparelTags>
+		<apparelMoney>0~1000</apparelMoney>
+		<minGenerationAge>10</minGenerationAge>
+		<maxGenerationAge>100</maxGenerationAge>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<invNutrition>2</invNutrition>
+		<invFoodDef>Pemmican</invFoodDef>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>1~3</initialResistanceRange>
+		<defaultFactionType>Resur_WildResurreviewy</defaultFactionType>
+	</PawnKindDef>
+	
+</Defs>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Resurreviewy the nxious about immortality race</name>
+  <author>Aoi_nasuko</author>
+  <packageId>bep.resurreviewy.tnair</packageId>
+  <supportedVersions>
+    <li>1.4</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>erdelf.HumanoidAlienRaces</packageId>
+      <displayName>Humanoid Alien Races</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
+      <downloadUrl></downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>erdelf.HumanoidAlienRaces</li>
+    <li>Nals.FacialAnimation</li>
+    <li>Nals.FacialAnimationExperimentals</li>
+  </loadAfter>
+  <description><![CDATA[
+【対応言語】
+日本語
+English(Machine translation)
+
+不老不死を憂う竜の娘、リザレビューイ
+
+<color=#77FFFF><size=20>＊概要</size></color>
+このMODはLittle Fairy RopeWorkTaleに実装していたリザレビューイを分離し、作成し直したMODです。
+決して死なない肉体を持つ、強力な種族です。
+
+<color=#77FFFF><size=15>＊ストーリー</size></color>
+かつてある企業によって作り出されたリザレビィーと呼ばれる不老不死の竜のような生物から、
+「決して朽ちることのない労働力」として人間が作り出してしまった種族がリザレビューイです。
+
+しかしリザレビューイは目論見通り不老不死で従順な種族として運用は出来たものの、
+不老不死のせいで個体数を増やすことは出来ても減らすことが出来ないという致命的な欠点がありました。
+繁栄した星の食料は増え続けるリザレビィーとリザレビューイによってあっという間に枯渇寸前にまで追い込まれてしまいました。
+
+星の食料を食い尽くす前に人間たちはリザレビューイ達に知識を与え、
+「リザレビィーとリザレビューイ達があらゆる星の食料を食い尽くす前に、いつか死ぬ事ができる技術を作り出すこと」を願い、
+故郷の星から彼女たちを追放しました。
+
+そして長い長い物語の後、今は様々な星にリザレビューイ達は定着しています。
+実験材料として使われるもの、労働力として使われるもの、
+純粋な仲間として何世代も時代を見てきたもの…
+そして、「不老不死の呪いから開放されるための技術」を身に着けたものも少なからず存在しています。
+
+<color=#77FFFF><size=15>＊入手方法</size></color>
+-時折、奴隷として売られているため購入して入手
+-稀に発生するリザレビューイとリザレビィーの出現イベントでテイムして入手
+
+<color=#77FFFF><size=15>＊特徴</size></color>
+<color=#77FFFF>-移動速度が早い</color>
+<color=#77FFFF>-体格が小さい</color>
+<color=#77FFFF>-部位HPが高い</color>
+<color=#77FFFF>-不老不死であり、肉体的な年齢が18歳以上にならない</color>
+<color=#77FFFF>-致命的な病気や欠損も、時間経過ですべて自然治癒する</color>
+<color=#77FFFF>-死体を解体してもペナルティを受けず、食べても人肉扱いではない</color>
+<color=#77FFFF>-格闘で角を用いた強力な攻撃を行うことが出来る</color>
+<color=#77FFFF>-Ideorogy導入時、奴隷状態の時に脱走しない</color>
+<color=#77FFFF>-人間の武器が装備可能</color>
+
+<color=#FF7777>-不老不死状態である限り、精神状態が非常に不安定</color>
+<color=#FF7777>心情の上限が50%になり、基礎値が25%になる</color>
+<color=#FF7777>性格"あっけらかん"もしくは"楽観主義者"を持っていない場合常にムードに-50の補正がかかる</color>
+<color=#FF7777>ただし、代わりに野生化は発生しないようになっている</color>
+
+<color=#77FFFF><size=20>＊その他、このMODで追加されるもの</size></color>
+-リザレビューイの研究が追加されます。
+-リザレビューイの建築物を追加します。
+-リザレビューイの衣装を追加します。
+-傷や病気を治癒するアイテム、不老不死になれる薬を追加します。作成にはリザレビューイが必要です。
+-動物のリザレビィーを追加します。リザレビューイと同じく不老不死です。
+
+]]></description>
+</ModMetaData>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Resur_PsychicBelt_Shield.label>Resur サイキックベルト-シールド</Resur_PsychicBelt_Shield.label>
+  <Resur_PsychicBelt_Shield.description>リザレビューイの血液を動力源とするサイキック式のシールドベルトです. 使用するには,リザレビューイの血液注射が動力として必要です.\n\nこのベルトのシールドは,着用者の遠隔攻撃を阻害しません. シールドの耐久値は時間経過や攻撃を受けると減少していきます. 特にEMPや近接攻撃のダメージを受けると大きく減少します.\n\n&lt;color=#B1FBFF&gt;この装備は体格の小さな他の種族も扱うことが出来るでしょう.&lt;/color&gt;</Resur_PsychicBelt_Shield.description>
+  <Resur_PsychicBelt_Shield.comps.CompProperties_Reloadable.chargeNoun>血液注射</Resur_PsychicBelt_Shield.comps.CompProperties_Reloadable.chargeNoun>
+  <Resur_PsychicBelt_Shield.verbs.0.label>シールドを起動する</Resur_PsychicBelt_Shield.verbs.0.label>
+
+  <Resur_PsychicBelt_Enhance.label>Resur サイキックベルト-エンハンス</Resur_PsychicBelt_Enhance.label>
+  <Resur_PsychicBelt_Enhance.description>リザレビューイの血液を動力源とするサイキック式のエンハンスベルトです. 使用するには,リザレビューイの血液注射が動力として必要です.\n\nこのベルトを起動すると,暫くの間戦闘関連の能力が大幅に上昇します.\n\n&lt;color=#B1FBFF&gt;この装備は体格の小さな他の種族も扱うことが出来るでしょう.&lt;/color&gt;</Resur_PsychicBelt_Enhance.description>
+  <Resur_PsychicBelt_Enhance.comps.CompProperties_Reloadable.chargeNoun>血液注射</Resur_PsychicBelt_Enhance.comps.CompProperties_Reloadable.chargeNoun>
+  <Resur_PsychicBelt_Enhance.verbs.0.label>エンハンスを起動する</Resur_PsychicBelt_Enhance.verbs.0.label>
+
+</LanguageData>

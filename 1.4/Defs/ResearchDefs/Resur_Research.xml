@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ResearchTabDef>
+		<defName>Resur_Research</defName>
+		<label>Resurreviewy</label>
+	</ResearchTabDef>
+	
+	<ResearchProjectDef>
+	    <defName>Resur_Knowledge</defName>
+	    <label>Knowledge</label>
+	    <description>You will learn about Resurreviewy and be able to create basic weapons.</description>
+	    <baseCost>500</baseCost>
+	    <techLevel>Industrial</techLevel>
+	    <tab>
+	      <li>Resur_Research</li>
+	    </tab>
+	    <researchViewX>0</researchViewX>
+	    <researchViewY>4</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+	    <defName>Resur_BloodAnalysis</defName>
+	    <label>Blood Analysis</label>
+	    <description>Resurreviewy analysis and will be able to process blood to create medicines that can heal minor wounds.</description>
+	    <baseCost>1000</baseCost>
+	    <techLevel>Industrial</techLevel>
+	    <tab>
+	      <li>Resur_Research</li>
+	    </tab>
+	    <prerequisites>
+	      <li>Resur_Knowledge</li>
+	    </prerequisites>
+	    <researchViewX>1</researchViewX>
+	    <researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+	    <defName>Resur_PsychicBelt</defName>
+	    <label>Psychic Belt</label>
+	    <description>You will be able to create belts with special abilities, running on Resurreviewy blood.</description>
+	    <baseCost>3000</baseCost>
+	    <techLevel>Industrial</techLevel>
+	    <tab>
+	      <li>Resur_Research</li>
+	    </tab>
+	    <prerequisites>
+	      <li>Resur_BloodAnalysis</li>
+	    </prerequisites>
+	    <researchViewX>2</researchViewX>
+	    <researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+	    <defName>Resur_RegenMedicine</defName>
+	    <label>Regen Medicine</label>
+	    <description>It will be possible to create medicines that can heal relatively large defects such as hands and feet.</description>
+	    <baseCost>3000</baseCost>
+	    <techLevel>Industrial</techLevel>
+	    <tab>
+	      <li>Resur_Research</li>
+	    </tab>
+	    <prerequisites>
+	      <li>Resur_BloodAnalysis</li>
+	    </prerequisites>
+	    <researchViewX>2</researchViewX>
+	    <researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+	    <defName>Resur_ElixirofEternalLife</defName>
+	    <label>Elixir of EternalLife</label>
+	    <description>It will be able to create advanced medicines that will make living creatures immortal.</description>
+	    <baseCost>5000</baseCost>
+	    <techLevel>Industrial</techLevel>
+	    <tab>
+	      <li>Resur_Research</li>
+	    </tab>
+	    <prerequisites>
+	      <li>Resur_RegenMedicine</li>
+	    </prerequisites>
+	    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	    <requiredResearchFacilities>
+	      <li>MultiAnalyzer</li>
+	    </requiredResearchFacilities>
+	    <researchViewX>3</researchViewX>
+	    <researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+	    <defName>Resur_AntidoteofEternalLife</defName>
+	    <label>Antidote of EternalLife</label>
+	    <description>It will be possible to create an antidote to "cure" immortality.</description>
+	    <baseCost>5000</baseCost>
+	    <techLevel>Industrial</techLevel>
+	    <tab>
+	      <li>Resur_Research</li>
+	    </tab>
+	    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	    <requiredResearchFacilities>
+	      <li>MultiAnalyzer</li>
+	    </requiredResearchFacilities>
+	    <prerequisites>
+	      <li>Resur_RegenMedicine</li>
+	    </prerequisites>
+	    <researchViewX>3</researchViewX>
+	    <researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+	    <defName>Resur_RelaxationKit</defName>
+	    <label>RelaxationKit</label>
+	    <description>You will be able to create psychic-style relaxation kits that temporarily elevate your mood.</description>
+	    <baseCost>3000</baseCost>
+	    <techLevel>Industrial</techLevel>
+	    <tab>
+	      <li>Resur_Research</li>
+	    </tab>
+	    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	    <requiredResearchFacilities>
+	      <li>MultiAnalyzer</li>
+	    </requiredResearchFacilities>
+	    <prerequisites>
+	      <li>Resur_BloodAnalysis</li>
+	    </prerequisites>
+	    <researchViewX>2</researchViewX>
+	    <researchViewY>4</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+	    <defName>Resur_Costumes</defName>
+	    <label>Costumes</label>
+	    <description>It will allow you to create Resurreviewy outfits.</description>
+	    <baseCost>500</baseCost>
+	    <techLevel>Industrial</techLevel>
+	    <tab>
+	      <li>Resur_Research</li>
+	    </tab>
+	    <prerequisites>
+	      <li>Resur_Knowledge</li>
+	    </prerequisites>
+	    <researchViewX>1</researchViewX>
+	    <researchViewY>5</researchViewY>
+	</ResearchProjectDef>
+	
+</Defs>

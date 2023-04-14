@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  
+  <Resur.Update.Title>Resurreviewy Update</Resur.Update.Title>
+  
+  <Resur.Update.label>
+2023/04/13(0.1.4.0):
+*Fixed a bug where an item that could target Resurreviewy could only be used on humans by mistake.
+
+*Resurrevi's nutritional consumption has been significantly reduced.
+
+*Resurreviewy and Resurrevi not belonging to their own faction now heal much slower.
+
+*Resurreviewy and Resurrevi that do not belong to their own faction no longer self-regenerate for a while when they go down.
+
+*Resurreviewy and Resurrevi that do not belong to a faction and are still down can now be buried in a hole and extinguished.
+Select a pawn to work with and right-click on the Resurreviewy to be buried in the hole to make the option appear.
+Note that the speed of this operation depends on the mining skill, and you will also get a small amount of mining experience.
+
+*New research has been added.
+
+*New equipment has been added.
+The new equipment can be equipped by all B.E.P. species, including LLittleFairy.
+
+2023/03/27(0.1.3.0):
+*Fixed some graphics
+
+*Separated FacialAnimation definitions into separate mods
+To reduce the load at startup, I have separated FacialAnimation images and definitions into separate mods.
+Please subscribe from the collection.
+
+*Resurreviewy's body color is now the same mold as my other race.
+Therefore, Resurreviewy's body color has changed in the existing data.
+I apologize for the inconvenience, but please use a character editor type mod to correct this.
+sorry.
+
+2023/03/05(0.1.2.0):
+*Resurreviewy now appear dressed according to their roles
+
+2023/01/31(0.1.1.4):
+*Research race restrictions have been removed
+
+*Added new equipment
+Instead of adding the equipment of another race, this mod is now added by itself
+Please note that you can no longer wear clothes of other races
+
+*Armor values of various equipment have been adjusted
+
+*Resurreviewy who appeared at the event could not be tamed, so this has been corrected so that he can be tamed by making her a wild man when he appears
+
+2023/01/30(0.1.1.3):
+*Various statuses are no longer corrected based on age
+
+2023/01/29(0.1.1.2):
+*Increased the number of hairstyle types to 8
+
+2023/01/27(0.1.1.1):
+*Separated horn color settings
+
+2023/01/15(0.1.1.0):
+*Architect categories have been merged
+
+2023/01/08(0.1.0.4):
+*The setting was changed so that the gene of Biotech's appearance system cannot be adapted
+
+2023/01/06(0.1.0.3):
+*Support for the function of fertility change through Biotech linkage of HAR
+
+2022/11/23(0.1.0.1):
+*Skin and hair colors are no longer changed by genes
+
+*Adjusted behavior of source code
+
+2022/11/13(0.1.0.0):
+*Release.
+</Resur.Update.label>
+
+
+</LanguageData>

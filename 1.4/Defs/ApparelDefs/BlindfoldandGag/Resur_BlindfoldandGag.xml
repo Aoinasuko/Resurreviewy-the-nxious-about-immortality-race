@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="ApparelMakeableBase">
+	<defName>Resur_BlindfoldandGag</defName>
+	<label>Resur Blindfold and Gag</label>
+	<description>Blindfold and Gag for Resurreviewy. Use when you want to take away their vision and language skills.</description>
+	<graphicData>
+		<texPath>BEPFT_Cloth/BlindfoldandGag/BlindfoldandGag</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<techLevel>Medieval</techLevel>
+	<costStuffCount>20</costStuffCount>
+	<stuffCategories>
+		<li>Fabric</li>
+		<li>Leathery</li>
+	</stuffCategories>
+	<tradeability>Sellable</tradeability>
+	<recipeMaker>
+		<researchPrerequisite>Resur_Costumes</researchPrerequisite>
+		<recipeUsers>
+			<li>Resur_CraftTable</li>
+		</recipeUsers>
+	</recipeMaker>
+	<thingCategories>
+		<li>Resur_Apparel</li>
+	</thingCategories>
+	<statBases>
+		<MaxHitPoints>200</MaxHitPoints>
+		<WorkToMake>1500</WorkToMake>
+		<Mass>0.1</Mass>
+		<Flammability>0.8</Flammability>
+		<StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
+		<EquipDelay>2</EquipDelay>
+	</statBases>
+	<equippedStatOffsets>
+		<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.1</SlaveSuppressionOffset>
+	</equippedStatOffsets>
+	<apparel>
+		<developmentalStageFilter>Adult</developmentalStageFilter>
+		<forceRenderUnderHair>true</forceRenderUnderHair>
+		<countsAsClothingForNudity>false</countsAsClothingForNudity>
+		<bodyPartGroups>
+			<li>Eyes</li>
+		</bodyPartGroups>
+		<wornGraphicPath>BEPFT_Cloth/BlindfoldandGag/BlindfoldandGag</wornGraphicPath>
+		<layers>
+			<li>EyeCover</li>
+		</layers>
+		<tags>
+			<li>Resur_Apparel_Slave</li>
+		</tags>
+		<blocksVision>true</blocksVision>
+	</apparel>
+	<comps>
+		<li>
+			<compClass>CompColorable</compClass>
+		</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology" Class="CompProperties_CauseHediff_Apparel">
+			<hediff>Blindfold</hediff>
+			<part>Head</part>
+		</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology" Class="CompProperties_CauseHediff_Apparel">
+			<hediff>Resur_Gag</hediff>
+			<part>Head</part>
+		</li>
+	</comps>
+	<colorGenerator Class="ColorGenerator_StandardApparel" />
+</ThingDef>
+
+</Defs>

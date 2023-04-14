@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 不老不死系 -->
+	
+	<AlienRace.AlienBackstoryDef Name="Resur_BaseBackStory_Normal" Abstract="True">
+		<bodyTypeMale>Female</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>Resur_Story_Normal</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Resur_BaseBackStory_Normal">
+		<defName>Resur_Normal_Child_A</defName>
+		<title>Wild Born Resurreviewy</title>
+		<titleShort>Wild Born</titleShort>
+		<baseDesc>[PAWN_nameDef] is a Resurreviewy born of parents who escaped from an experimental facility. In order to avoid capture by other species, she simply accumulated the knowledge of life.</baseDesc>
+		<slot>Childhood</slot>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Resur_BaseBackStory_Normal">
+		<defName>Resur_Normal_Child_B</defName>
+		<title>Born of advanced civilization</title>
+		<titleShort>Advanced Civilization</titleShort>
+		<baseDesc>[PAWN_nameDef] was a Resurreviewy living on an advanced planet that solved the problem of living forever. However, one day an attack happened and she was taken away by her attackers.</baseDesc>
+		<slot>Childhood</slot>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Resur_BaseBackStory_Normal">
+		<defName>Resur_Normal_Adult_A</defName>
+		<title>Traveler</title>
+		<titleShort>Traveler</titleShort>
+		<baseDesc>[PAWN_nameDef] was traveling aimlessly with his friends. Sometimes they met other races and ate together.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Shooting</key>
+				<value>1</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Resur_BaseBackStory_Normal">
+		<defName>Resur_Normal_Adult_B</defName>
+		<title>Examinee</title>
+		<titleShort>Examinee</titleShort>
+		<baseDesc>[PAWN_nameDef] once lived in a laboratory. She was always looking for something to find out about herself by having them research her.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Resur_BaseBackStory_Normal">
+		<defName>Resur_Normal_Adult_C</defName>
+		<title>Laborer</title>
+		<titleShort>Laborer</titleShort>
+		<baseDesc>[PAWN_nameDef] used to work as a mining laborer in one of the mines to learn the limits of her immortal body. Her experience there gave her a good opportunity to acquire mining know-how.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Resur_BaseBackStory_Normal">
+		<defName>Resur_Normal_Adult_D</defName>
+		<title>Soldier</title>
+		<titleShort>Soldier</titleShort>
+		<baseDesc>[PAWN_nameDef] was a member of an army. Because she was immortal, she was primarily responsible for close combat and helping her allies shoot.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	
+</Defs>

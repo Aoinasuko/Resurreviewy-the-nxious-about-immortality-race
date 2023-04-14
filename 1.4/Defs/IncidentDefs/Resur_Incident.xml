@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <IncidentDef>
+    <defName>Resur_Passes</defName>
+    <label>Resurreviewy Pass</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Resurreviewy_Race.IncidentWorker_ResurreviewyPass</workerClass>
+    <baseChance>1.6</baseChance>
+    <minRefireDays>60</minRefireDays>
+  </IncidentDef>
+  
+</Defs>

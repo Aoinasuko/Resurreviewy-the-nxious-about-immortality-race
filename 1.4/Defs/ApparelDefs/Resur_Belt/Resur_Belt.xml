@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="ApparelMakeableBase">
+	<defName>Resur_PsychicBelt_Shield</defName>
+	<label>Resur PsychicBelt-Shield</label>
+	<description>Resurreviewy blood-powered, psychic-style shield belt. Once used, it requires a syringe filled with Resurreviewy's blood for filling.\n\nWhen used, it deploys a shield that prevents any attack. While the shield is deployed, the durability value is displayed.\n\nThe durability value of the shield decreases over time and when attacked. In particular, it decreases significantly when the shield is damaged by EMP or melee attacks.\n\n&lt;color=#B1FBFF&gt;This equipment would also be able to be equipped by other races with smaller body sizes.&lt;/color&gt;</description>
+	<graphicData>
+		<texPath>Resur/Apparel/PsychicBelt</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<costList>
+		<Resur_BloodSyringe>3</Resur_BloodSyringe>
+		<ComponentIndustrial>4</ComponentIndustrial>
+		<Plasteel>20</Plasteel>
+    </costList>
+	<techLevel>Industrial</techLevel>
+	<costStuffCount>50</costStuffCount>
+	<stuffCategories>
+		<li>Fabric</li>
+		<li>Leathery</li>
+	</stuffCategories>
+	<tradeability>Sellable</tradeability>
+	<tickerType>Normal</tickerType>
+	<recipeMaker>
+		<researchPrerequisite>Resur_PsychicBelt</researchPrerequisite>
+		<recipeUsers>
+			<li>Resur_CraftTable</li>
+		</recipeUsers>
+	</recipeMaker>
+	<thingCategories>
+		<li>Resur_Apparel</li>
+	</thingCategories>
+	<statBases>
+		<MaxHitPoints>200</MaxHitPoints>
+		<WorkToMake>15000</WorkToMake>
+		<Mass>0.2</Mass>
+		<Flammability>0.5</Flammability>
+		<EquipDelay>2</EquipDelay>
+	</statBases>
+	<apparel>
+		<developmentalStageFilter>Child,Adult</developmentalStageFilter>
+		<countsAsClothingForNudity>false</countsAsClothingForNudity>
+		<careIfWornByCorpse>false</careIfWornByCorpse>
+		<careIfDamaged>false</careIfDamaged>
+		<wearPerDay>0</wearPerDay>
+		<bodyPartGroups>
+			<li>Waist</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Resur/Apparel/PsychicBelt</wornGraphicPath>
+		<layers>
+			<li>Belt</li>
+		</layers>
+		<tags>
+			<li>Resur_Apparel</li>
+		</tags>
+	</apparel>
+	<comps>
+		<li Class="Resurreviewy_Race.CompProperties_Shield">
+			<HPMax>1800</HPMax>
+			<LossHP>1</LossHP>
+			<DamageHP>1</DamageHP>
+		</li>
+		<li Class="CompProperties_Reloadable">
+			<maxCharges>3</maxCharges>
+			<ammoDef>Resur_BloodSyringe</ammoDef>
+			<ammoCountToRefill>3</ammoCountToRefill>
+			<baseReloadTicks>60</baseReloadTicks>
+			<soundReload>Standard_Reload</soundReload>
+			<hotKey>Misc4</hotKey>
+			<chargeNoun>bloodsyringe</chargeNoun>
+		</li>
+	</comps>
+	<verbs>
+		<li>
+			<verbClass>Resurreviewy_Race.Verb_ActiveShield</verbClass>
+			<label>active shield</label>
+			<violent>false</violent>
+			<hasStandardCommand>true</hasStandardCommand>
+			<targetable>false</targetable>
+			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+			<onlyManualCast>True</onlyManualCast>
+		</li>
+	</verbs>
+	<colorGenerator Class="ColorGenerator_StandardApparel" />
+</ThingDef>
+
+<ThingDef ParentName="ApparelMakeableBase">
+	<defName>Resur_PsychicBelt_Enhance</defName>
+	<label>Resur PsychicBelt-Enhance</label>
+	<description>Resurreviewy blood-powered, psychic-style enhance belt. Once used, it requires a syringe filled with Resurreviewy's blood for filling.\n\nWhen used, it increases movement speed and various attack capabilities.\n\n&lt;color=#B1FBFF&gt;This equipment would also be able to be equipped by other races with smaller body sizes.&lt;/color&gt;</description>
+	<graphicData>
+		<texPath>Resur/Apparel/PsychicBelt</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<costList>
+		<Resur_BloodSyringe>3</Resur_BloodSyringe>
+		<ComponentIndustrial>4</ComponentIndustrial>
+		<Plasteel>20</Plasteel>
+    </costList>
+	<techLevel>Industrial</techLevel>
+	<costStuffCount>50</costStuffCount>
+	<stuffCategories>
+		<li>Fabric</li>
+		<li>Leathery</li>
+	</stuffCategories>
+	<tradeability>Sellable</tradeability>
+	<tickerType>Normal</tickerType>
+	<recipeMaker>
+		<researchPrerequisite>Resur_PsychicBelt</researchPrerequisite>
+		<recipeUsers>
+			<li>Resur_CraftTable</li>
+		</recipeUsers>
+	</recipeMaker>
+	<thingCategories>
+		<li>Resur_Apparel</li>
+	</thingCategories>
+	<statBases>
+		<MaxHitPoints>200</MaxHitPoints>
+		<WorkToMake>15000</WorkToMake>
+		<Mass>0.2</Mass>
+		<Flammability>0.5</Flammability>
+		<EquipDelay>2</EquipDelay>
+	</statBases>
+	<apparel>
+		<developmentalStageFilter>Child,Adult</developmentalStageFilter>
+		<countsAsClothingForNudity>false</countsAsClothingForNudity>
+		<careIfWornByCorpse>false</careIfWornByCorpse>
+		<careIfDamaged>false</careIfDamaged>
+		<wearPerDay>0</wearPerDay>
+		<bodyPartGroups>
+			<li>Waist</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Resur/Apparel/PsychicBelt</wornGraphicPath>
+		<layers>
+			<li>Belt</li>
+		</layers>
+		<tags>
+			<li>Resur_Apparel</li>
+		</tags>
+	</apparel>
+	<comps>
+		<li Class="Resurreviewy_Race.CompProperties_Shield">
+			<HPMax>1800</HPMax>
+			<LossHP>1</LossHP>
+			<DamageHP>0</DamageHP>
+			<IsShield>false</IsShield>
+			<AddHediff>Resur_EnhanceBelt</AddHediff>
+		</li>
+		<li Class="CompProperties_Reloadable">
+			<maxCharges>3</maxCharges>
+			<ammoDef>Resur_BloodSyringe</ammoDef>
+			<ammoCountToRefill>3</ammoCountToRefill>
+			<baseReloadTicks>60</baseReloadTicks>
+			<soundReload>Standard_Reload</soundReload>
+			<hotKey>Misc4</hotKey>
+			<chargeNoun>bloodsyringe</chargeNoun>
+		</li>
+	</comps>
+	<verbs>
+		<li>
+			<verbClass>Resurreviewy_Race.Verb_ActiveShield</verbClass>
+			<label>active enhance</label>
+			<violent>false</violent>
+			<hasStandardCommand>true</hasStandardCommand>
+			<targetable>false</targetable>
+			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+			<onlyManualCast>True</onlyManualCast>
+		</li>
+	</verbs>
+	<colorGenerator Class="ColorGenerator_StandardApparel" />
+</ThingDef>
+
+</Defs>
+
+

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Resur_Knowledge.label>知識</Resur_Knowledge.label>
+  <Resur_Knowledge.description>リザレビューイの知識を学び,基礎的なアイテムを作成できるようになります.</Resur_Knowledge.description>
+
+  <Resur_BloodAnalysis.label>血液分析</Resur_BloodAnalysis.label>
+  <Resur_BloodAnalysis.description>リザレビューイの血液を分析し,軽い怪我を瞬時に治癒する医療器具を作成できるようになります.</Resur_BloodAnalysis.description>
+
+  <Resur_PsychicBelt.label>サイキックベルト</Resur_PsychicBelt.label>
+  <Resur_PsychicBelt.description>リザレビューイの血で動く,サイキック式の特殊な能力を持ったベルトを作成できるようになります.</Resur_PsychicBelt.description>
+
+  <Resur_RegenMedicine.label>再生医療</Resur_RegenMedicine.label>
+  <Resur_RegenMedicine.description>更に深い怪我や,欠損を治癒する医療器具を作成できるようになります.</Resur_RegenMedicine.description>
+
+  <Resur_ElixirofEternalLife.label>不老不死の薬</Resur_ElixirofEternalLife.label>
+  <Resur_ElixirofEternalLife.description>リザレビューイ達と同等の不老不死の力を手に入れられる薬を作成できるようになります.</Resur_ElixirofEternalLife.description>
+
+  <Resur_AntidoteofEternalLife.label>不老不死の解毒薬</Resur_AntidoteofEternalLife.label>
+  <Resur_AntidoteofEternalLife.description>不老不死を"治癒"する解毒薬を作成できるようになります.</Resur_AntidoteofEternalLife.description>
+
+  <Resur_RelaxationKit.label>リラクゼーションキット</Resur_RelaxationKit.label>
+  <Resur_RelaxationKit.description>リザレビューイの血で動く,サイキック式の精神安定装置を作成できるようになります.</Resur_RelaxationKit.description>
+
+  <Resur_Costumes.label>衣装</Resur_Costumes.label>
+  <Resur_Costumes.description>リザレビューイの衣装を作成できるようになります.</Resur_Costumes.description>
+
+
+</LanguageData>

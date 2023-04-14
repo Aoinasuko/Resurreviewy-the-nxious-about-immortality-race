@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Resurrevi.label>リザレビィー</Resurrevi.label>
+  <Resurrevi.description>その不老不死の竜のような怪物は,青白い毛皮を持っています.\n彼らはリザレビィーの遺伝子を持つ種族,リザレビューイと共に群れで行動することが多いようです.\n彼らは老いることも死ぬこともなく,手懐けることもそう難しくはないため戦闘時の盾として運用することも出来ます.\nしかしかなりの大食らいかつ繁殖活動をも行うため最終的に拠点の木々が根こそぎ食べられてしまったとの報告もあります.\nもしもこの不思議な生物を手懐ける場合は飼育する数に注意しましょう.</Resurrevi.description>
+  <Resurrevi.tools.0.label>角</Resurrevi.tools.0.label>
+  <Resurrevi.tools.1.label>歯</Resurrevi.tools.1.label>
+  <Resurrevi.tools.2.label>左足</Resurrevi.tools.2.label>
+  <Resurrevi.tools.3.label>右足</Resurrevi.tools.3.label>
+  <Resurrevi.tools.4.label>頭</Resurrevi.tools.4.label>
+
+  <Leather_Resurrevi.label>リザレビィーの毛皮</Leather_Resurrevi.label>
+  <Leather_Resurrevi.description>リザレビィーの毛皮.\nとある手段を行った場合でのみリザレビィーを殺すことに成功し,この毛皮を剥ぎ取る事が出来ると言われている.\n流通量もかなり少なく,高値で取引される.\nこの毛皮を使った服は不老不死の怪物の毛皮は伊達ではない性能を発揮してくれるだろう.</Leather_Resurrevi.description>
+
+</LanguageData>

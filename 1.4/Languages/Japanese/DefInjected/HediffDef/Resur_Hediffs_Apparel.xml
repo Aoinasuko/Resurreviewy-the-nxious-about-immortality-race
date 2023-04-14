@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Resur_Gag.label>ギャグ</Resur_Gag.label>
+  <Resur_Gag.description>会話能力が制限された状態です.</Resur_Gag.description>
+
+  <Resur_EnhanceBelt.label>エンハンス</Resur_EnhanceBelt.label>
+  <Resur_EnhanceBelt.description>戦闘能力が強化された状態です.</Resur_EnhanceBelt.description>
+
+</LanguageData>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <HediffDef>
+    <defName>Resur_EternalLife</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.4, 0.6, 0.8)</defaultLabelColor>
+    <isBad>false</isBad>
+    <label>Eternal Life</label>
+    <description>It is a state of eternal life. This character will not age beyond a certain point and will not die in all circumstances.</description>
+    <comps>
+      <li Class="Resurreviewy_Race.HediffCompProperties_Heal">
+        <smallheal>true</smallheal>
+        <bigheal>true</bigheal>
+        <smallhealtime>600</smallhealtime>
+        <bighealtime>6000</bighealtime>
+      </li>
+    </comps>
+  </HediffDef>
+  
+  <HediffDef>
+    <defName>Resur_Antidote_EternalLife</defName>
+    <hediffClass>Hediff</hediffClass>
+    <defaultLabelColor>(0.4, 0.6, 0.8)</defaultLabelColor>
+    <isBad>false</isBad>
+    <label>Antidote Eternal Life</label>
+    <description>It is a state of liberation from EternalLife.</description>
+  </HediffDef>
+  
+  <HediffDef>
+    <defName>Resur_Relaxation</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.4, 0.6, 0.8)</defaultLabelColor>
+    <isBad>false</isBad>
+    <label>Relaxation</label>
+    <description>The mind is in a slightly calmer state.</description>
+    <stages>
+      <li>
+        <statOffsets>
+          <MentalBreakThreshold>-0.2</MentalBreakThreshold>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>
+          <min>600</min>
+          <max>600</max>
+        </disappearsAfterTicks>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Resur_RegenerationInhibition</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.4, 0.6, 0.8)</defaultLabelColor>
+    <isBad>false</isBad>
+    <label>Regeneration Inhibition</label>
+    <description>It is a condition in which significant damage has been done and the ability to regenerate is temporarily lost. In this state, it can be buried in a hole and made to disappear.</description>
+    <stages>
+      <li>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>
+          <min>7500</min>
+          <max>7500</max>
+        </disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+  </HediffDef>
+
+</Defs>

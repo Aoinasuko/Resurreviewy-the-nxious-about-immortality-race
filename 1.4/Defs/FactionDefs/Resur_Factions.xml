@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="FactionBase">
+    <defName>Resur_WildResurreviewy</defName>
+    <label>Wild Resurreviewy</label>
+    <description>Resurreviewy herd. They are anxious about their immortal bodies and travel to different places.</description>
+    <colorSpectrum>
+      <li>(0, 1, 0.6)</li>
+      <li>(0, 0.9, 0.8)</li>
+    </colorSpectrum>
+    <pawnSingular>Wild Resurreviewy</pawnSingular>
+    <pawnsPlural>Wild Resurreviewies</pawnsPlural>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <mustStartOneEnemy>false</mustStartOneEnemy>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <hidden>true</hidden>
+    <rescueesCanJoin>true</rescueesCanJoin>
+    <autoFlee>false</autoFlee>
+    <classicIdeo>false</classicIdeo>
+    <factionIconPath>Resur/UI/Faction</factionIconPath>
+    <techLevel>Neolithic</techLevel>
+    <factionNameMaker>NamerFactionTribal</factionNameMaker>
+    <structureMemeWeights>
+      <Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">10</Structure_Animist>
+    </structureMemeWeights>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Resur_Story_Normal</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <settlementTexturePath>Resur/UI/Faction</settlementTexturePath>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Baseliner MayRequire="Ludeon.RimWorld.Biotech">1.0</Baseliner>
+      </xenotypeChances>
+    </xenotypeSet>
+  </FactionDef>
+
+</Defs>

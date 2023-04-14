@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>Resur_PsychologicalEffect</defName>
+    <durationDays>10</durationDays>
+    <effectMultiplyingStat>PsychicSensitivity</effectMultiplyingStat>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>psychological effect</label>
+        <description>I can't stop worrying...</description>
+        <baseMoodEffect>-30</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>Resur_ResTTWI</defName>
+    <workerClass>Resurreviewy_Race.ThoughtWorker_Resurrevi</workerClass>
+    <stages>
+      <li>
+       <label>The Trouble with immortality</label>
+       <description>I worry about immortality.</description>
+       <baseMoodEffect>-50</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+</Defs>

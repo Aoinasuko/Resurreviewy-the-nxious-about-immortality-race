@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Resur_RelaxationKit</defName>
+    <label>Resur Relaxation Kit</label>
+    <description>It is a machine that releases psychic energy that improves the emotional state of the surrounding race. Requires Resurreviewy blood to operate.</description>
+    <graphicData>
+      <texPath>Resur/Build/Misc/RelaxationKit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1, 1)</drawSize>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+        <offset>(0.0, 0.0, -0.1)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.75,1.0,0.5)</rect>
+      </damageData>
+    </graphicData>
+    <uiIconScale>0.85</uiIconScale>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <costList>
+      <Steel>75</Steel>
+      <Plasteel>20</Plasteel>
+      <ComponentSpacer>10</ComponentSpacer>
+    </costList>
+    <comps>
+      <li Class="Resurreviewy_Race.CompProperties_AddHediff">
+        <Range>10.9</Range>
+        <Hediff>Resur_Relaxation</Hediff>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>0.2</fuelConsumptionRate>
+        <fuelCapacity>5.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>Resur_BloodSyringe</li>
+          </thingDefs>
+        </fuelFilter>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(140,140,217,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <altitudeLayer>Building</altitudeLayer>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+    </building>
+    <statBases>
+      <MarketValue>2500</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>0</Beauty>
+      <Mass>15</Mass>
+      <WorkToBuild>2000</WorkToBuild>
+    </statBases>
+    <fillPercent>0.2</fillPercent>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <pathCost>30</pathCost>
+    <passability>PassThroughOnly</passability>
+    <rotatable>false</rotatable>
+    <canOverlapZones>false</canOverlapZones>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <specialDisplayRadius>10.9</specialDisplayRadius>
+    <tradeability>Sellable</tradeability>
+    <tickerType>Normal</tickerType>
+    <tradeTags>
+      <li>ExoticBuilding</li>
+    </tradeTags>
+    <researchPrerequisites>
+      <li>Resur_RelaxationKit</li>
+    </researchPrerequisites>
+    <designationCategory>BEPFT_Building</designationCategory>
+  </ThingDef>
+
+</Defs>

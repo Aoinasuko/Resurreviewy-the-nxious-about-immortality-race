@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- 素材 -->
+  
+  <ThingDef ParentName="ResourceBase" Name="Resur_ResourceItemBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Mass>0.2</Mass>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <tradeability>All</tradeability>
+  </ThingDef>
+
+  <ThingDef ParentName="Resur_ResourceItemBase">
+    <defName>Resur_Syringe</defName>
+    <label>Resur Syringe</label>
+    <description>A syringe to draw blood from the resurreviewy. The blood drawn will be used as material.</description>
+    <graphicData>
+      <texPath>Resur/Thing/Artifact/ResurSyringe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>10</stackLimit>
+    <statBases>
+      <WorkToMake>1000</WorkToMake>
+      <MarketValue>50</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>ItemsMisc</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>0</useDuration>
+      </li>
+      <li Class="CompProperties_Targetable">
+        <compClass>Resurreviewy_Race.CompTargetable_UseResur</compClass>
+      </li>
+      <li Class="Resurreviewy_Race.CompProperties_Resur_UseItem">
+        <moteDef>Mote_ResurrectFlash</moteDef>
+      </li>
+    </comps>
+    <costList>
+      <Steel>30</Steel>
+      <MedicineIndustrial>3</MedicineIndustrial>
+    </costList>
+    <recipeMaker>
+      <recipeUsers>
+        <li>Resur_CraftTable</li>
+      </recipeUsers>
+      <workSkill>Intellectual</workSkill>
+      <researchPrerequisite>Resur_BloodAnalysis</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="Resur_ResourceItemBase">
+    <defName>Resur_BloodSyringe</defName>
+    <label>Resur BloodSyringe</label>
+    <description>Resurreviewy blood-filled syringe.</description>
+    <graphicData>
+      <texPath>Resur/Thing/Artifact/ResurBloodSyringe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>10</stackLimit>
+    <statBases>
+      <MarketValue>100</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+  </ThingDef>
+
+  <!-- 回復薬 -->
+
+  <ThingDef ParentName="ResourceBase" Name="Resur_HealItemBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Mass>0.2</Mass>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <tradeability>Sellable</tradeability>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="Resur_HealItemBase">
+    <defName>Resur_SmallHealer</defName>
+    <label>Resur SmallHealer</label>
+    <description>This item can instantly heal minor wounds by amplifying spiritual power.\n\nIt heals all wounds and scars for 10.0 points only.\n\nOccasionally, side effects can cause temporary mood swings caused by psychics.</description>
+    <graphicData>
+      <texPath>Resur/Thing/Artifact/ResurHealer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>10</stackLimit>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <MarketValue>500</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>ItemsMisc</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>0</useDuration>
+      </li>
+      <li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SinglePawn</compClass>
+      </li>
+      <li Class="Resurreviewy_Race.CompProperties_Resur_UseItem">
+        <moteDef>Mote_ResurrectFlash</moteDef>
+      </li>
+      <li Class="Resurreviewy_Race.compProperties_Healer">
+        <healamount>10</healamount>
+        <sideeffect>10</sideeffect>
+      </li>
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+    <costList>
+      <Resur_BloodSyringe>1</Resur_BloodSyringe>
+      <MedicineIndustrial>3</MedicineIndustrial>
+    </costList>
+    <recipeMaker>
+      <recipeUsers>
+        <li>Resur_CraftTable</li>
+      </recipeUsers>
+      <workSkill>Intellectual</workSkill>
+      <researchPrerequisite>Resur_BloodAnalysis</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="Resur_HealItemBase">
+    <defName>Resur_MidHealer</defName>
+    <label>Resur MidHealer</label>
+    <description>This item can instantly heal minor wounds and minor missingparts by amplifying spiritual power.\n\nIt heals all missing parts of the body with a maximum HP of 15 or less.\nIt heals all wounds and scars for 30.0 points only.\n\nOccasionally, side effects can cause temporary mood swings caused by psychics.</description>
+    <graphicData>
+      <texPath>Resur/Thing/Artifact/ResurHealer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>10</stackLimit>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <MarketValue>1000</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>ItemsMisc</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>0</useDuration>
+      </li>
+      <li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SinglePawn</compClass>
+      </li>
+      <li Class="Resurreviewy_Race.CompProperties_Resur_UseItem">
+        <moteDef>Mote_ResurrectFlash</moteDef>
+      </li>
+      <li Class="Resurreviewy_Race.compProperties_Healer">
+        <healamount>30</healamount>
+        <canhealparts>true</canhealparts>
+        <maxhealparts>15</maxhealparts>
+        <sideeffect>20</sideeffect>
+      </li>
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>
+    <costList>
+      <Resur_BloodSyringe>2</Resur_BloodSyringe>
+      <MedicineIndustrial>5</MedicineIndustrial>
+      <MedicineUltratech>3</MedicineUltratech>
+    </costList>
+    <recipeMaker>
+      <recipeUsers>
+        <li>Resur_CraftTable</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+        <Intellectual>4</Intellectual>
+      </skillRequirements>
+      <workSkill>Intellectual</workSkill>
+      <researchPrerequisite>Resur_RegenMedicine</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="Resur_HealItemBase">
+    <defName>Resur_HighHealer</defName>
+    <label>Resur HighHealer</label>
+    <description>This item can instantly heal wounds, di and missingparts by amplifying spiritual power.\n\nIt cures all potentially deadly diseases.\nIt heals all missing parts of the body with a maximum HP of 500 or less.\nIt heals all wounds and scars for 100.0 points only.\n\nOccasionally, side effects can cause temporary mood swings caused by psychics.</description>
+    <graphicData>
+      <texPath>Resur/Thing/Artifact/ResurHealer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>10</stackLimit>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <MarketValue>1500</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>ItemsMisc</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>0</useDuration>
+      </li>
+      <li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SinglePawn</compClass>
+      </li>
+      <li Class="Resurreviewy_Race.CompProperties_Resur_UseItem">
+        <moteDef>Mote_ResurrectFlash</moteDef>
+      </li>
+      <li Class="Resurreviewy_Race.compProperties_Healer">
+        <healamount>100</healamount>
+        <canhealparts>true</canhealparts>
+        <maxhealparts>500</maxhealparts>
+        <canhealdisease>true</canhealdisease>
+        <sideeffect>30</sideeffect>
+      </li>
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>
+    <costList>
+      <Resur_BloodSyringe>3</Resur_BloodSyringe>
+      <MedicineIndustrial>10</MedicineIndustrial>
+      <MedicineUltratech>5</MedicineUltratech>
+    </costList>
+    <recipeMaker>
+      <recipeUsers>
+        <li>Resur_CraftTable</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+        <Intellectual>8</Intellectual>
+      </skillRequirements>
+      <workSkill>Intellectual</workSkill>
+      <researchPrerequisite>Resur_RegenMedicine</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <!-- 不老不死の薬 -->
+
+  <ThingDef ParentName="Resur_HealItemBase">
+    <defName>Resur_ElixirofEternalLife</defName>
+    <label>Resur Elixir of EternalLife</label>
+    <description>Resurreviewy blood-based drugs. It makes the body unable to die.</description>
+    <graphicData>
+      <texPath>Resur/Thing/Artifact/ResurHealer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>10</stackLimit>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <MarketValue>3000</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>ItemsMisc</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>0</useDuration>
+      </li>
+      <li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SinglePawn</compClass>
+      </li>
+      <li Class="Resurreviewy_Race.CompProperties_Resur_UseItem">
+        <moteDef>Mote_ResurrectFlash</moteDef>
+      </li>
+    </comps>
+    <costList>
+      <Resur_BloodSyringe>5</Resur_BloodSyringe>
+      <MedicineIndustrial>50</MedicineIndustrial>
+      <MedicineUltratech>25</MedicineUltratech>
+    </costList>
+    <recipeMaker>
+      <recipeUsers>
+        <li>Resur_CraftTable</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+        <Intellectual>10</Intellectual>
+      </skillRequirements>
+      <workSkill>Intellectual</workSkill>
+      <researchPrerequisite>Resur_ElixirofEternalLife</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="Resur_HealItemBase">
+    <defName>Resur_AntidoteofEternalLife</defName>
+    <label>Resur Antidote of EternalLife</label>
+    <description>This is a chemical that inhibits and "cures" the immortality effect of Resurreviewy's blood derivatives. Resurreviewy that uses it will be able to die. However, it does not affect the function of genetic immortality in any way.</description>
+    <graphicData>
+      <texPath>Resur/Thing/Artifact/ResurHealer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>10</stackLimit>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <MarketValue>3000</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>ItemsMisc</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>0</useDuration>
+      </li>
+      <li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SinglePawn</compClass>
+      </li>
+      <li Class="Resurreviewy_Race.CompProperties_Resur_UseItem">
+        <moteDef>Mote_ResurrectFlash</moteDef>
+      </li>
+    </comps>
+    <costList>
+      <Resur_BloodSyringe>5</Resur_BloodSyringe>
+      <MedicineIndustrial>50</MedicineIndustrial>
+      <MedicineUltratech>25</MedicineUltratech>
+    </costList>
+    <recipeMaker>
+      <recipeUsers>
+        <li>Resur_CraftTable</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+        <Intellectual>10</Intellectual>
+      </skillRequirements>
+      <workSkill>Intellectual</workSkill>
+      <researchPrerequisite>Resur_AntidoteofEternalLife</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

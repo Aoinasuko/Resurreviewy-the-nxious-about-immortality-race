@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Resur.UI.MaxMoodLimitTip>&lt;color=#FF6666&gt;Note:\nResurreviewy maximum heartiness under the curse of immortality will be 50%.&lt;/color&gt;</Resur.UI.MaxMoodLimitTip>
+  
+  <Resur.UI.BeltHP>Belt Power</Resur.UI.BeltHP>
+  
+  <Resur.UI.CantBuried>Can't be buried</Resur.UI.CantBuried>
+  
+  <Resur.UI.Buried>Buried {0} in the hole</Resur.UI.Buried>
+  
+  <Resur.Incident.LetterLabelResurreviPass>Resurreviewy Pass</Resur.Incident.LetterLabelResurreviPass>
+  <Resur.Incident.LetterResurreviPass>Resurreviewy, a wandering race of immortals, has appeared. If you wish to borrow their power, you can attempt to take them on.</Resur.Incident.LetterResurreviPass>
+  
+  <Resur.Incident.BackEffect>Side effects of the treatment have occurred.</Resur.Incident.BackEffect>
+  
+
+</LanguageData>

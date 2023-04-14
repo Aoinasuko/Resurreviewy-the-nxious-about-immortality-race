@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+		<defName>Resurreviewy_Pawn</defName>
+		<label>Resurreviewy</label>
+		<description>Resurreviewy is a creature that has been created by crossing human and Resurrevi genes. They do not age, and no matter how much they are injured, they cannot die because their regenerative abilities allow them to recover from damage. As a result, their population has only increased on their home planet. Fearing that their excessive prosperity would lead to the destruction of the planet, the humans banished the Resurreviewy from the planet. The Resurreviewy were then scattered across the stars. Many Resurreviewy do not like the idea of an immortal body that can't die no matter what they do, and have very dark personalities... Resurreviewy are learning technology and trying to create a "potion that can die like a human".</description>
+		<alienRace>
+			<generalSettings>
+				<maleGenderProbability>-1</maleGenderProbability>
+				<immuneToAge>true</immuneToAge>
+				<canLayDown>true</canLayDown>
+				<maxDamageForSocialfight>6</maxDamageForSocialfight>
+				<humanRecipeImport>true</humanRecipeImport>
+				<minAgeForAdulthood>5</minAgeForAdulthood>
+				<immuneToXenophobia>true</immuneToXenophobia>
+				<allowHumanBios>false</allowHumanBios>
+				<lovinIntervalHoursFromAge>
+					<points>
+						<li>(0.3, 2)</li>
+						<li>(900, 2)</li>
+						<li>(950, 5)</li>
+						<li>(1000, 10.0)</li>
+					</points>
+				</lovinIntervalHoursFromAge>
+				<disallowedTraits>
+					<li>
+						<defName>Beauty</defName>
+						<degree>-1</degree>
+					</li>
+					<li>
+						<defName>Beauty</defName>
+						<degree>-2</degree>
+					</li>
+					<li>
+						<defName>Beauty</defName>
+						<degree>2</degree>
+					</li>
+					<li>
+						<defName>DislikesMen</defName>
+					</li>
+					<li>
+						<defName>DislikesWomen</defName>
+					</li>
+					<li>
+						<defName>AnnoyingVoice</defName>
+					</li>
+					<li>
+						<defName>CreepyBreathing</defName>
+					</li>
+				</disallowedTraits>
+				<alienPartGenerator>
+					<oldHairAgeRange>10000~99999</oldHairAgeRange>
+					<oldHairColorGen Class="ColorGenerator_Options">
+						<options>
+							<li>
+								<weight>1</weight>
+								<only>RGBA(0.19,0.19,0.70,1)</only>
+							</li>
+						</options>
+					</oldHairColorGen>
+					<headTypes Inherit="False">
+						<li>Male_AverageNormal</li>
+						<li>Female_AverageNormal</li>
+					</headTypes>
+					<bodyTypes>
+						<li>Female</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+					</bodyTypes>
+					<headOffset>(-0.1, -0.186)</headOffset>
+					<customDrawSize>(1, 1)</customDrawSize>
+					<customPortraitDrawSize>(1, 1)</customPortraitDrawSize>
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(0,0.41,0.71,1)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(0.51,0.35,0.71,1)</only>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(255,104,104,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(255,189,54,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(255,248,137,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(169,255,172,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(153,255,255,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(154,164,255,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(223,181,255,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(172,90,60,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(255,250,240,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(233,205,113,255)</only>
+									</li>
+								</options>
+							</second>
+						</li>
+						<li>
+							<name>hair</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(0.19,0.19,0.70,1)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+						<li>
+							<name>horn</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(1.0,1.0,1.0,1)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+					</colorChannels>
+					<bodyAddons>
+						<li>
+							<path>Resur/Race/Ear/Left/LEar</path>
+							<bodyPartLabel>left ear</bodyPartLabel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>true</layerInvert>
+							<drawSize>1</drawSize>
+							<colorChannel>hair</colorChannel>
+							<drawnInBed>true</drawnInBed>
+							<drawnDesiccated>false</drawnDesiccated>
+							<offsets>
+								<west>
+									<bodyTypes>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,-0.07)</Baby>
+									</bodyTypes>
+								</west>
+								<south>
+									<bodyTypes>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.04,-0.04)</Baby>
+									</bodyTypes>
+								</south>
+								<north>
+									<bodyTypes>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0.04,-0.04)</Baby>
+									</bodyTypes>
+								</north>
+								<east>
+									<layerOffset>-1.0</layerOffset>
+									<bodyTypes>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,-0.07)</Baby>
+									</bodyTypes>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<path>Resur/Race/Ear/Right/REar</path>
+							<bodyPartLabel>right ear</bodyPartLabel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>true</layerInvert>
+							<drawSize>1</drawSize>
+							<colorChannel>hair</colorChannel>
+							<drawnInBed>true</drawnInBed>
+							<drawnDesiccated>false</drawnDesiccated>
+							<offsets>
+								<west>
+									<layerOffset>-1.0</layerOffset>
+									<bodyTypes>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,-0.07)</Baby>
+									</bodyTypes>
+								</west>
+								<south>
+									<bodyTypes>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0.04,-0.04)</Baby>
+									</bodyTypes>
+								</south>
+								<north>
+									<bodyTypes>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.04,-0.04)</Baby>
+									</bodyTypes>
+								</north>
+								<east>
+									<bodyTypes>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,-0.07)</Baby>
+									</bodyTypes>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<path>Resur/Race/Horn/Horn</path>
+							<bodyPart>Horn</bodyPart>
+							<inFrontOfBody>true</inFrontOfBody>
+							<drawSize>1</drawSize>
+							<drawnInBed>true</drawnInBed>
+							<drawnDesiccated>false</drawnDesiccated>
+							<colorChannel>horn</colorChannel>
+							<offsets>
+								<west>
+									<bodyTypes>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.02,-0.07)</Baby>
+									</bodyTypes>
+								</west>
+								<south>
+									<bodyTypes>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,-0.04)</Baby>
+									</bodyTypes>
+								</south>
+								<north>
+									<bodyTypes>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,-0.04)</Baby>
+									</bodyTypes>
+								</north>
+								<east>
+									<bodyTypes>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.02,-0.07)</Baby>
+									</bodyTypes>
+								</east>
+							</offsets>
+						</li>
+					</bodyAddons>
+				</alienPartGenerator>
+				<reproduction>
+					<!-- 男の生殖率 -->
+					<maleFertilityAgeFactor>
+						<points>
+							<li>(3, 0)</li>
+							<li>(5, 1)</li>
+							<li>(950, 1)</li>
+							<li>(1000, 0)</li>
+						</points>
+					</maleFertilityAgeFactor>
+					<!-- 女の生殖率 -->
+					<femaleFertilityAgeFactor>
+						<points>
+							<li>(3, 0)</li>
+							<li>(5, 1)</li>
+							<li>(950, 1)</li>
+							<li>(1000, 0)</li>
+						</points>
+					</femaleFertilityAgeFactor>
+				</reproduction>
+				<growthAges>
+					<li>1</li>
+					<li>3</li>
+					<li>5</li>
+				</growthAges>
+			</generalSettings>
+			<graphicPaths>
+				<head>Resur/Race/Head/Average_Normal</head>
+				<body>Resur/Race/Body/</body>
+				<skeleton>Resur/Race/Bone/Bone</skeleton>
+				<skull>Resur/Race/HeadBone/HeadBone</skull>
+			</graphicPaths>
+			<styleSettings>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+						<styleTagsOverride>
+							<li>Resurreviewy</li>
+						</styleTagsOverride>
+					</value>
+				</li>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>TattooDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+			</styleSettings>
+			<relationSettings>
+			</relationSettings>
+			<raceRestriction>
+				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+				<apparelList>
+					<li>Resur_SimpleCloth</li>
+					<li>Resur_SimpleCollor</li>
+					<li>Resur_SlaveStrap</li>
+					<li>Resur_Blindfold</li>
+					<li>Resur_BlindfoldandGag</li>
+					<li>Resur_SimpleArmor</li>
+					<li>Resur_MaidCloth</li>
+					<li>Resur_NobleCape</li>
+					<li>Resur_NobleCloth</li>
+					<li>Resur_SwimSuit</li>
+					<li>Resur_PsychicBelt_Shield</li>
+					<li>Resur_PsychicBelt_Enhance</li>
+				</apparelList>
+				<blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">FacialRidges</li>
+				</blackGeneList>
+				<blackGeneTags>
+					<li>SkinColor</li>
+					<li>HairColor</li>
+					<li>EyeColor</li>
+					<li>BodyType</li>
+					<li>Ears</li>
+					<li>Nose</li>
+					<li>Jaw</li>
+					<li>Head</li>
+					<li>Headbone</li>
+					<li>HairStyle</li>
+					<li>BeardStyle</li>
+					<li>SkinColorOverride</li>
+					<li>Fur</li>
+					<li>Tail</li>
+				</blackGeneTags>
+				<blackEndoCategories>
+					<li>Melanin</li>
+					<li>HairColor</li>
+					<li>Ears</li>
+					<li>Nose</li>
+					<li>Jaw</li>
+					<li>Head</li>
+					<li>BodyType</li>
+				</blackEndoCategories>
+			</raceRestriction>
+			<thoughtSettings>
+				<cannotReceiveThoughts>
+					<li>Naked</li>
+					<li>ApparelDamaged</li>
+					<li>ProsthophileHappy</li>
+					<li>ProsthophobeUnhappy</li>
+					<li>BrawlerUnhappy</li>
+					<li>PyromaniacHappy</li>
+					<li>Greedy</li>
+					<li>Jealous</li>
+					<li>SharedBed</li>
+					<li>AteWithoutTable</li>
+					<li>SleptOutside</li>
+					<li>SleptOnGround</li>
+					<li>SleptInCold</li>
+					<li>SleptInHeat</li>
+					<li>AteKibble</li>
+					<li>AteInsectMeatDirect</li>
+					<li>AteInsectMeatAsIngredient</li>
+					<li>AteRawFood</li>
+				</cannotReceiveThoughts>
+			</thoughtSettings>
+		</alienRace>
+		<statBases>
+			<Mass>25</Mass>
+			<MarketValue>2500</MarketValue>
+			<MoveSpeed>5.2</MoveSpeed>
+			<PsychicSensitivity>1.5</PsychicSensitivity>
+			<ToxicResistance>1.0</ToxicResistance>
+			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
+			<ComfyTemperatureMax>100</ComfyTemperatureMax>
+			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.50</ArmorRating_Heat>
+			<MeatAmount>75</MeatAmount>
+			<LeatherAmount>30</LeatherAmount>
+			<RoyalFavorValue>9</RoyalFavorValue>
+		</statBases>
+		<tools>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Bite</def>
+							<amount>3</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Blunt</def>
+							<amount>5</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Blunt</def>
+							<amount>5</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>horn</label>
+				<capacities>
+					<li>Scratch</li>
+					<li>Stab</li>
+				</capacities>
+				<power>24</power>
+				<cooldownTime>1.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<race>
+			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<baseHungerRate>0.6</baseHungerRate>
+			<intelligence>Humanlike</intelligence>
+			<fleshType>Resurreviewy</fleshType>
+			<makesFootprints>false</makesFootprints>
+			<lifeExpectancy>1000</lifeExpectancy>
+			<leatherDef>Leather_Light</leatherDef>
+			<nameCategory>HumanStandard</nameCategory>
+			<hasGenders>true</hasGenders>
+			<trainability>Advanced</trainability>
+			<body>Resurreviewy</body>
+			<baseBodySize>0.6</baseBodySize>
+			<baseHealthScale>2.5</baseHealthScale>
+			<wildness>0.05</wildness>
+			<manhunterOnDamageChance>1.00</manhunterOnDamageChance>
+			<foodType>OmnivoreAnimal</foodType>
+			<gestationPeriodDays>18</gestationPeriodDays>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<litterSizeCurve>
+				<points>
+					<li>(0, 0)</li>
+					<li>(1, 0.50)</li>
+					<li>(2, 0.45)</li>
+					<li>(3, 0.05)</li>
+					<li>(4, 0)</li>
+					<li>(5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>Resurreviewy_Baby</def>
+					<minAge>0</minAge>
+					<headOffsetDirectional>
+						<north>(0.0, 0.0)</north>
+						<east>(0.06, 0.0)</east>
+						<south>(0.0, 0.0)</south>
+						<west>(-0.06, 0.0)</west>
+					</headOffsetDirectional>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>Resurreviewy_Child</def>
+					<minAge>1</minAge>
+					<headOffsetDirectional>
+						<north>(0.0, 0.0)</north>
+						<east>(0.06, 0.0)</east>
+						<south>(0.0, 0.0)</south>
+						<west>(-0.06, 0.0)</west>
+					</headOffsetDirectional>
+				</li>
+				<li>
+					<def>Resurreviewy_Adult</def>
+					<minAge>5</minAge>
+				</li>
+			</lifeStageAges>
+			<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+				<Firefighter>3</Firefighter>
+				<Patient>0</Patient>
+				<Doctor>5</Doctor>
+				<PatientBedRest>0</PatientBedRest>
+				<Childcare MayRequire="Ludeon.RimWorld.Biotech">3</Childcare>
+				<BasicWorker>5</BasicWorker>
+				<Warden>5</Warden>
+				<Handling>3</Handling>
+				<Cooking>5</Cooking>
+				<Hunting>5</Hunting>
+				<Construction>3</Construction>
+				<Growing>5</Growing>
+				<Mining>3</Mining>
+				<PlantCutting>5</PlantCutting>
+				<Smithing>3</Smithing>
+				<Tailoring>5</Tailoring>
+				<Art>5</Art>
+				<Crafting>3</Crafting>
+				<Hauling>3</Hauling>
+				<Cleaning>3</Cleaning>
+				<Research>5</Research>
+			</lifeStageWorkSettings>
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
+			<ageGenerationCurve>
+				<points>
+					<li>(6,0)</li>
+					<li>(7,100)</li>
+					<li>(30,100)</li>
+					<li>(40,30)</li>
+					<li>(100,20)</li>
+					<li>(300,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<hediffGiverSets>
+				<li>OrganicStandard</li>
+			</hediffGiverSets>
+		</race>
+		<comps>
+			<li Class="Resurreviewy_Race.CompProperties_Undead">
+				<smallhealtime>600</smallhealtime>
+				<bighealtime>3000</bighealtime>
+			</li>
+		</comps>
+	</AlienRace.ThingDef_AlienRace>
+	
+	<LifeStageDef>
+		<defName>Resurreviewy_Baby</defName>
+		<label>Resurreviewy Baby</label>
+		<reproductive>false</reproductive>
+		<visible>false</visible>
+		<developmentalStage>Baby</developmentalStage>
+		<statFactors>
+			<MoveSpeed>0.25</MoveSpeed>
+		</statFactors>
+		<meleeDamageFactor>0.5</meleeDamageFactor>
+		<healthScaleFactor>0.25</healthScaleFactor>
+	</LifeStageDef>
+	
+	<LifeStageDef>
+		<defName>Resurreviewy_Child</defName>
+		<label>Resurreviewy Child</label>
+		<reproductive>false</reproductive>
+		<visible>false</visible>
+		<developmentalStage>Child</developmentalStage>
+		<statFactors>
+			<MoveSpeed>0.75</MoveSpeed>
+		</statFactors>
+		<meleeDamageFactor>0.5</meleeDamageFactor>
+		<healthScaleFactor>0.5</healthScaleFactor>
+	</LifeStageDef>
+	
+	<LifeStageDef>
+		<defName>Resurreviewy_Adult</defName>
+		<label>Resurreviewy Adult</label>
+		<reproductive>true</reproductive>
+		<visible>false</visible>
+		<developmentalStage>Adult</developmentalStage>
+	</LifeStageDef>
+
+	<AlienRace.RaceSettings>
+		<defName>Resurreviewy_Settings</defName>
+		<pawnKindSettings>
+			<alienslavekinds>
+				<li>
+					<kindDefs>
+						<li>Resurreviewy_Slave</li>
+					</kindDefs>
+					<chance>30.0</chance>
+				</li>
+			</alienslavekinds>
+		</pawnKindSettings>
+	</AlienRace.RaceSettings>
+
+</Defs>

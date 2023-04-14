@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Resur_EternalLife.label>不老不死</Resur_EternalLife.label>
+  <Resur_EternalLife.description>年を取らず,死なない状態です.</Resur_EternalLife.description>
+
+  <Resur_Antidote_EternalLife.label>不老不死の解毒</Resur_Antidote_EternalLife.label>
+  <Resur_Antidote_EternalLife.description>死ぬことが出来る状態です.</Resur_Antidote_EternalLife.description>
+
+  <Resur_Relaxation.label>リラクゼーション</Resur_Relaxation.label>
+  <Resur_Relaxation.description>心が少しだけ落ち着いた状態です.</Resur_Relaxation.description>
+
+  <Resur_RegenerationInhibition.label>再生阻害</Resur_RegenerationInhibition.label>
+  <Resur_RegenerationInhibition.description>膨大なダメージを受け,再生能力が一時的に停止している状態です.\n\nこの状態の時,他の人を使って地面に埋めて消滅させることが出来ます.</Resur_RegenerationInhibition.description>
+
+</LanguageData>

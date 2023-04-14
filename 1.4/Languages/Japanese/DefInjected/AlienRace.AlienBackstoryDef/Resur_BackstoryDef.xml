@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 不老不死系 -->
+
+  <Resur_Normal_Child_A.title>野生生まれのリザレビューイ</Resur_Normal_Child_A.title>
+  <Resur_Normal_Child_A.titleShort>野生生まれ</Resur_Normal_Child_A.titleShort>
+  <Resur_Normal_Child_A.baseDesc>[PAWN_nameDef]は実験施設から逃亡した両親の間に生まれました.\n他の種族に捕らわれないために,彼女はただひたすら知識を蓄積していきました.</Resur_Normal_Child_A.baseDesc>
+
+  <Resur_Normal_Child_B.title>豊かな星のリザレビューイ</Resur_Normal_Child_B.title>
+  <Resur_Normal_Child_B.titleShort>豊かな星</Resur_Normal_Child_B.titleShort>
+  <Resur_Normal_Child_B.baseDesc>[PAWN_nameDef]は,不老不死の問題を解決した先進的な惑星に住んでいました.\nしかしある日襲撃事件が起こり,彼女は襲撃者たちに連れ去られてしまいました.</Resur_Normal_Child_B.baseDesc>
+
+  <Resur_Normal_Adult_A.title>放浪者</Resur_Normal_Adult_A.title>
+  <Resur_Normal_Adult_A.titleShort>放浪者</Resur_Normal_Adult_A.titleShort>
+  <Resur_Normal_Adult_A.baseDesc>[PAWN_nameDef]は故郷の星を離れ,あてもなくフラフラとさまよっていました.</Resur_Normal_Adult_A.baseDesc>
+
+  <Resur_Normal_Adult_B.title>被験者</Resur_Normal_Adult_B.title>
+  <Resur_Normal_Adult_B.titleShort>被験者</Resur_Normal_Adult_B.titleShort>
+  <Resur_Normal_Adult_B.baseDesc>[PAWN_nameDef]はある研究所に住んでいました.\nそこで様々な実験を受け,自分の体のメカニズムについて知ろうとしていました.</Resur_Normal_Adult_B.baseDesc>
+
+  <Resur_Normal_Adult_C.title>労働者</Resur_Normal_Adult_C.title>
+  <Resur_Normal_Adult_C.titleShort>労働者</Resur_Normal_Adult_C.titleShort>
+  <Resur_Normal_Adult_C.baseDesc>[PAWN_nameDef]は自身の肉体の限界を知るべく,ある鉱山で労働をしていました.\nそこでの経験は彼女に採掘の知識を与えました.</Resur_Normal_Adult_C.baseDesc>
+
+  <Resur_Normal_Adult_D.title>軍事者</Resur_Normal_Adult_D.title>
+  <Resur_Normal_Adult_D.titleShort>軍事者</Resur_Normal_Adult_D.titleShort>
+  <Resur_Normal_Adult_D.baseDesc>[PAWN_nameDef]は意外なことに,ある軍に兵士として所属していました.\n彼女の不老不死の肉体を用いた接近戦闘は,皆に恐れられていました.</Resur_Normal_Adult_D.baseDesc>
+
+</LanguageData>

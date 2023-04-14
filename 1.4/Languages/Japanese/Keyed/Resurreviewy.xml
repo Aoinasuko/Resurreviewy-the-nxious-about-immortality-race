@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Resur.UI.MaxMoodLimitTip>&lt;color=#FF6666&gt;警告:\n不老不死の呪いを受けているリザレビューイ達の心情の最大値は50%になります.&lt;/color&gt;</Resur.UI.MaxMoodLimitTip>
+  
+  <Resur.UI.BeltHP>ベルトのパワー</Resur.UI.BeltHP>
+  
+  <Resur.UI.CantBuried>穴に埋められない</Resur.UI.CantBuried>
+  
+  <Resur.UI.Buried>{0}を穴に埋める</Resur.UI.Buried>
+  
+  <Resur.Incident.LetterLabelResurreviPass>リザレビューイの来訪</Resur.Incident.LetterLabelResurreviPass>
+  <Resur.Incident.LetterResurreviPass>さまよう不老不死の種族,リザレビューイ達が現れました.彼女達の力を借りたいのであればテイムを試みることが出来ます.</Resur.Incident.LetterResurreviPass>
+  
+  <Resur.Incident.BackEffect>治療の副作用が発生してしまいました.</Resur.Incident.BackEffect>
+
+</LanguageData>

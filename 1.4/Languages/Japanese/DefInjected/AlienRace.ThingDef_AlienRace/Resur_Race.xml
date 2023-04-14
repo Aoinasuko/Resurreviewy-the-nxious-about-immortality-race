@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Resurreviewy_Pawn.label>リザレビューイ</Resurreviewy_Pawn.label>
+  <Resurreviewy_Pawn.description>リザレビューイは人間とリザレビィーの遺伝子をかけ合わせて出来てしまった生物です.\n彼女たちは老いず,いくら傷ついても再生能力によって損傷が回復するため死ぬことが出来ません.\nそのため故郷の星でその個体数は増えるばかりでした.\n過剰な繁栄によって星が滅亡してしまう事を恐れた人間たちは,リザレビューイを星から追放しました.\nそうして彼女たちは幾つかの星へと散らばって行き,様々な永遠の人生を歩みだしたのです...\n\n多くのリザレビューイ達は何をしても死なない不死の肉体を快く思っておらず,非常に暗い性格をしています.\nまた,リザレビューイ達の中には技術を学び「人間と同じように死ぬことの出来る薬」を作ろうとしている者もいます.</Resurreviewy_Pawn.description>
+  <Resurreviewy_Pawn.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>skin</Resurreviewy_Pawn.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>
+  <Resurreviewy_Pawn.alienRace.generalSettings.alienPartGenerator.colorChannels.1.name>hair</Resurreviewy_Pawn.alienRace.generalSettings.alienPartGenerator.colorChannels.1.name>
+  <Resurreviewy_Pawn.tools.0.label>歯</Resurreviewy_Pawn.tools.0.label>
+  <Resurreviewy_Pawn.tools.1.label>左拳</Resurreviewy_Pawn.tools.1.label>
+  <Resurreviewy_Pawn.tools.2.label>右拳</Resurreviewy_Pawn.tools.2.label>
+  <Resurreviewy_Pawn.tools.3.label>角</Resurreviewy_Pawn.tools.3.label>
+
+
+</LanguageData>
