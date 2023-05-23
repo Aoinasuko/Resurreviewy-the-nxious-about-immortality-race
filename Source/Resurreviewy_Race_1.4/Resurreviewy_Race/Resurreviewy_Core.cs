@@ -9,14 +9,6 @@ using Verse;
 
 namespace Resurreviewy_Race
 {
-    /*
-    [DefOf]
-    public static class Job_Mofy
-    {
-        public static JobDef MilkingMofy;
-    }
-    */
-
     [DefOf]
     public static class Thought_Resur
     {
@@ -54,12 +46,4 @@ namespace Resurreviewy_Race
     {
         public static readonly Material Shield = MaterialPool.MatFrom("Other/ShieldBubble", ShaderDatabase.Transparent);
     }
-
-    /*
-    [DefOf]
-    public static class Ideology_Mofy
-    {
-        public static MemeDef Mofy_Mofy;
-    }
-    */
 }

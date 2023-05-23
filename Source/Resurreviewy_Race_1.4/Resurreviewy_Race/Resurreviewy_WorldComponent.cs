@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 
-namespace Mofy_Race
+namespace Resurreviewy_Race
 {
 	public class Resurreviewy_WorldComponent : WorldComponent
 	{

@@ -127,20 +127,4 @@
 	    <researchViewY>4</researchViewY>
 	</ResearchProjectDef>
 	
-	<ResearchProjectDef>
-	    <defName>Resur_Costumes</defName>
-	    <label>Costumes</label>
-	    <description>It will allow you to create Resurreviewy outfits.</description>
-	    <baseCost>500</baseCost>
-	    <techLevel>Industrial</techLevel>
-	    <tab>
-	      <li>Resur_Research</li>
-	    </tab>
-	    <prerequisites>
-	      <li>Resur_Knowledge</li>
-	    </prerequisites>
-	    <researchViewX>1</researchViewX>
-	    <researchViewY>5</researchViewY>
-	</ResearchProjectDef>
-	
 </Defs>

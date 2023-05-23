@@ -6,8 +6,9 @@
 	<label>Resur PsychicBelt-Shield</label>
 	<description>Resurreviewy blood-powered, psychic-style shield belt. Once used, it requires a syringe filled with Resurreviewy's blood for filling.\n\nWhen used, it deploys a shield that prevents any attack. While the shield is deployed, the durability value is displayed.\n\nThe durability value of the shield decreases over time and when attacked. In particular, it decreases significantly when the shield is damaged by EMP or melee attacks.\n\n&lt;color=#B1FBFF&gt;This equipment would also be able to be equipped by other races with smaller body sizes.&lt;/color&gt;</description>
 	<graphicData>
-		<texPath>Resur/Apparel/PsychicBelt</texPath>
+		<texPath>BEPRaceCore/Apparel/ApparelBox/ApparelBox</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
 	</graphicData>
 	<costList>
 		<Resur_BloodSyringe>3</Resur_BloodSyringe>
@@ -27,9 +28,12 @@
 		<recipeUsers>
 			<li>Resur_CraftTable</li>
 		</recipeUsers>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
 	</recipeMaker>
 	<thingCategories>
-		<li>Resur_Apparel</li>
+		<li>BEP_Apparel</li>
 	</thingCategories>
 	<statBases>
 		<MaxHitPoints>200</MaxHitPoints>
@@ -47,13 +51,17 @@
 		<bodyPartGroups>
 			<li>Waist</li>
 		</bodyPartGroups>
-		<wornGraphicPath>Resur/Apparel/PsychicBelt</wornGraphicPath>
+		<wornGraphicPath>Resur/Apparel/PsychicBelt/PsychicBelt</wornGraphicPath>
 		<layers>
 			<li>Belt</li>
 		</layers>
 		<tags>
 			<li>Resur_Apparel</li>
 		</tags>
+		<defaultOutfitTags>
+			<li>Worker</li>
+			<li>Soldier</li>
+		</defaultOutfitTags>
 	</apparel>
 	<comps>
 		<li Class="Resurreviewy_Race.CompProperties_Shield">
@@ -90,8 +98,9 @@
 	<label>Resur PsychicBelt-Enhance</label>
 	<description>Resurreviewy blood-powered, psychic-style enhance belt. Once used, it requires a syringe filled with Resurreviewy's blood for filling.\n\nWhen used, it increases movement speed and various attack capabilities.\n\n&lt;color=#B1FBFF&gt;This equipment would also be able to be equipped by other races with smaller body sizes.&lt;/color&gt;</description>
 	<graphicData>
-		<texPath>Resur/Apparel/PsychicBelt</texPath>
+		<texPath>BEPRaceCore/Apparel/ApparelBox/ApparelBox</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
 	</graphicData>
 	<costList>
 		<Resur_BloodSyringe>3</Resur_BloodSyringe>
@@ -111,9 +120,12 @@
 		<recipeUsers>
 			<li>Resur_CraftTable</li>
 		</recipeUsers>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
 	</recipeMaker>
 	<thingCategories>
-		<li>Resur_Apparel</li>
+		<li>BEP_Apparel</li>
 	</thingCategories>
 	<statBases>
 		<MaxHitPoints>200</MaxHitPoints>
@@ -131,13 +143,17 @@
 		<bodyPartGroups>
 			<li>Waist</li>
 		</bodyPartGroups>
-		<wornGraphicPath>Resur/Apparel/PsychicBelt</wornGraphicPath>
+		<wornGraphicPath>Resur/Apparel/PsychicBelt/PsychicBelt</wornGraphicPath>
 		<layers>
 			<li>Belt</li>
 		</layers>
 		<tags>
 			<li>Resur_Apparel</li>
 		</tags>
+		<defaultOutfitTags>
+			<li>Worker</li>
+			<li>Soldier</li>
+		</defaultOutfitTags>
 	</apparel>
 	<comps>
 		<li Class="Resurreviewy_Race.CompProperties_Shield">

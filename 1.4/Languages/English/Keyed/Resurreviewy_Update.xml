@@ -4,6 +4,11 @@
   <Resur.Update.Title>Resurreviewy Update</Resur.Update.Title>
   
   <Resur.Update.label>
+2023/05/23(0.2.0.0):
+*B.E.P Race Core is required as a prerequisite mod, and common parts have been greatly reduced.
+If you are using an earlier version, various data such as hairstyles and clothes have been lost.
+If you need an older version, you can download the mod before the update by going to github from the mod page.
+
 2023/04/13(0.1.4.0):
 *Fixed a bug where an item that could target Resurreviewy could only be used on humans by mistake.
 

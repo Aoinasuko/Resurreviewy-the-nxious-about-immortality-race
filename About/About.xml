@@ -13,10 +13,16 @@
       <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
       <downloadUrl></downloadUrl>
     </li>
+    <li>
+      <packageId>bep.race.core</packageId>
+      <displayName>B.E.P Race Core</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2975722341</steamWorkshopUrl>
+      <downloadUrl></downloadUrl>
+    </li>
   </modDependencies>
   <loadAfter>
-    <li>brrainz.harmony</li>
     <li>erdelf.HumanoidAlienRaces</li>
+    <li>bep.race.core</li>
     <li>Nals.FacialAnimation</li>
     <li>Nals.FacialAnimationExperimentals</li>
   </loadAfter>

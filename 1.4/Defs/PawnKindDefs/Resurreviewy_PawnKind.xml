@@ -19,13 +19,13 @@
 		</backstoryFiltersOverride>
 		<styleItemTags>
 			<li>
-				<tag>Resurreviewy</tag>
+				<tag>BEPRace</tag>
 				<baseWeight>1</baseWeight>
 				<weightFactor>1</weightFactor>
 			</li>
 		</styleItemTags>
 		<apparelTags>
-			<li>Resur_Apparel</li>
+			<li>BEP_Apparel</li>
 		</apparelTags>
 		<apparelMoney>0~1000</apparelMoney>
 		<minGenerationAge>10</minGenerationAge>
@@ -57,13 +57,13 @@
 		</backstoryFiltersOverride>
 		<styleItemTags>
 			<li>
-				<tag>Resurreviewy</tag>
+				<tag>BEPRace</tag>
 				<baseWeight>1</baseWeight>
 				<weightFactor>1</weightFactor>
 			</li>
 		</styleItemTags>
 		<apparelTags>
-			<li>Resur_Apparel_Slave</li>
+			<li>BEP_Apparel_Slave</li>
 		</apparelTags>
 		<apparelMoney>0~1000</apparelMoney>
 		<minGenerationAge>10</minGenerationAge>

@@ -38,6 +38,10 @@
         <Baseliner MayRequire="Ludeon.RimWorld.Biotech">1.0</Baseliner>
       </xenotypeChances>
     </xenotypeSet>
+    <modExtensions>
+      <li Class="BEPRace_Core.BEPRace_FactionSetting">
+      </li>
+    </modExtensions>
   </FactionDef>
 
 </Defs>

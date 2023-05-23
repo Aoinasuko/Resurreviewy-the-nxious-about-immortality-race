@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 
-namespace Mofy_Race
+namespace Resurreviewy_Race
 {
 	public class Resurreviewy_Settings : Mod
 	{
@@ -29,7 +29,7 @@ namespace Mofy_Race
 	public class Resurreviewy_Config : ModSettings
 	{
 		// バージョン
-		public static int ver = 140;
+		public static int ver = 200;
 
 		// アップデートバージョン
 		public static int Updatever = 0;

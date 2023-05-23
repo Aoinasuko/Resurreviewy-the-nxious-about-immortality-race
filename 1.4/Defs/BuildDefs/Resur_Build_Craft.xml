@@ -39,7 +39,7 @@
       <Cleanliness>-5</Cleanliness>
     </statBases>
     <size>(3,1)</size>
-    <designationCategory>BEPFT_Building</designationCategory>
+    <designationCategory>BEP_Building</designationCategory>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <hasInteractionCell>True</hasInteractionCell>

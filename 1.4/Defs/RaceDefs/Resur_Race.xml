@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
-	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+	<AlienRace.ThingDef_AlienRace Tag="BEPRace" ParentName="BasePawn">
 		<defName>Resurreviewy_Pawn</defName>
 		<label>Resurreviewy</label>
 		<description>Resurreviewy is a creature that has been created by crossing human and Resurrevi genes. They do not age, and no matter how much they are injured, they cannot die because their regenerative abilities allow them to recover from damage. As a result, their population has only increased on their home planet. Fearing that their excessive prosperity would lead to the destruction of the planet, the humans banished the Resurreviewy from the planet. The Resurreviewy were then scattered across the stars. Many Resurreviewy do not like the idea of an immortal body that can't die no matter what they do, and have very dark personalities... Resurreviewy are learning technology and trying to create a "potion that can die like a human".</description>
@@ -68,7 +68,7 @@
 						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
 					</bodyTypes>
-					<headOffset>(-0.1, -0.186)</headOffset>
+					<headOffset>(-0.1, -0.26)</headOffset>
 					<customDrawSize>(1, 1)</customDrawSize>
 					<customPortraitDrawSize>(1, 1)</customPortraitDrawSize>
 					<colorChannels>
@@ -156,101 +156,36 @@
 					</colorChannels>
 					<bodyAddons>
 						<li>
-							<path>Resur/Race/Ear/Left/LEar</path>
+							<path>BEPRaceCore/Race/ResurEar/Left/LEar</path>
 							<bodyPartLabel>left ear</bodyPartLabel>
+							<alignWithHead>true</alignWithHead>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerInvert>true</layerInvert>
 							<drawSize>1</drawSize>
 							<colorChannel>hair</colorChannel>
 							<drawnInBed>true</drawnInBed>
 							<drawnDesiccated>false</drawnDesiccated>
-							<offsets>
-								<west>
-									<bodyTypes>
-										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,-0.07)</Baby>
-									</bodyTypes>
-								</west>
-								<south>
-									<bodyTypes>
-										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.04,-0.04)</Baby>
-									</bodyTypes>
-								</south>
-								<north>
-									<bodyTypes>
-										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0.04,-0.04)</Baby>
-									</bodyTypes>
-								</north>
-								<east>
-									<layerOffset>-1.0</layerOffset>
-									<bodyTypes>
-										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,-0.07)</Baby>
-									</bodyTypes>
-								</east>
-							</offsets>
 						</li>
 						<li>
-							<path>Resur/Race/Ear/Right/REar</path>
+							<path>BEPRaceCore/Race/ResurEar/Right/REar</path>
 							<bodyPartLabel>right ear</bodyPartLabel>
+							<alignWithHead>true</alignWithHead>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerInvert>true</layerInvert>
 							<drawSize>1</drawSize>
 							<colorChannel>hair</colorChannel>
 							<drawnInBed>true</drawnInBed>
 							<drawnDesiccated>false</drawnDesiccated>
-							<offsets>
-								<west>
-									<layerOffset>-1.0</layerOffset>
-									<bodyTypes>
-										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,-0.07)</Baby>
-									</bodyTypes>
-								</west>
-								<south>
-									<bodyTypes>
-										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0.04,-0.04)</Baby>
-									</bodyTypes>
-								</south>
-								<north>
-									<bodyTypes>
-										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.04,-0.04)</Baby>
-									</bodyTypes>
-								</north>
-								<east>
-									<bodyTypes>
-										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,-0.07)</Baby>
-									</bodyTypes>
-								</east>
-							</offsets>
 						</li>
 						<li>
-							<path>Resur/Race/Horn/Horn</path>
+							<path>BEPRaceCore/Race/ResurHorn/ResurHorn</path>
 							<bodyPart>Horn</bodyPart>
+							<alignWithHead>true</alignWithHead>
 							<inFrontOfBody>true</inFrontOfBody>
 							<drawSize>1</drawSize>
 							<drawnInBed>true</drawnInBed>
 							<drawnDesiccated>false</drawnDesiccated>
 							<colorChannel>horn</colorChannel>
-							<offsets>
-								<west>
-									<bodyTypes>
-										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.02,-0.07)</Baby>
-									</bodyTypes>
-								</west>
-								<south>
-									<bodyTypes>
-										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,-0.04)</Baby>
-									</bodyTypes>
-								</south>
-								<north>
-									<bodyTypes>
-										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,-0.04)</Baby>
-									</bodyTypes>
-								</north>
-								<east>
-									<bodyTypes>
-										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.02,-0.07)</Baby>
-									</bodyTypes>
-								</east>
-							</offsets>
 						</li>
 					</bodyAddons>
 				</alienPartGenerator>
@@ -281,10 +216,12 @@
 				</growthAges>
 			</generalSettings>
 			<graphicPaths>
-				<head>Resur/Race/Head/Average_Normal</head>
-				<body>Resur/Race/Body/</body>
-				<skeleton>Resur/Race/Bone/Bone</skeleton>
-				<skull>Resur/Race/HeadBone/HeadBone</skull>
+				<head>BEPRaceCore/Race/Head/Average_Normal</head>
+				<body>BEPRaceCore/Race/Body/Resur/</body>
+				<skeleton>BEPRaceCore/Race/Bone/Bone</skeleton>
+				<skull>BEPRaceCore/Race/HeadBone/HeadBone</skull>
+				<skinShader>CutoutSkin</skinShader>
+				<skinColor>(1,1,1,1)</skinColor>
 			</graphicPaths>
 			<styleSettings>
 				<li>
@@ -292,7 +229,7 @@
 					<value>
 						<hasStyle>true</hasStyle>
 						<styleTagsOverride>
-							<li>Resurreviewy</li>
+							<li>BEPRace</li>
 						</styleTagsOverride>
 					</value>
 				</li>
@@ -314,18 +251,6 @@
 			<raceRestriction>
 				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
 				<apparelList>
-					<li>Resur_SimpleCloth</li>
-					<li>Resur_SimpleCollor</li>
-					<li>Resur_SlaveStrap</li>
-					<li>Resur_Blindfold</li>
-					<li>Resur_BlindfoldandGag</li>
-					<li>Resur_SimpleArmor</li>
-					<li>Resur_MaidCloth</li>
-					<li>Resur_NobleCape</li>
-					<li>Resur_NobleCloth</li>
-					<li>Resur_SwimSuit</li>
-					<li>Resur_PsychicBelt_Shield</li>
-					<li>Resur_PsychicBelt_Enhance</li>
 				</apparelList>
 				<blackGeneList>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
@@ -563,6 +488,15 @@
 				<bighealtime>3000</bighealtime>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="BEPRace_Core.BEPRace_Setting">
+				<ignoreDead>false</ignoreDead>
+				<fleeMeat>true</fleeMeat>
+				<ignoreAge>true</ignoreAge>
+				<ignoreFlee>true</ignoreFlee>
+				<slaveWorkSpeed>1.0</slaveWorkSpeed>
+			</li>
+		</modExtensions>
 	</AlienRace.ThingDef_AlienRace>
 	
 	<LifeStageDef>

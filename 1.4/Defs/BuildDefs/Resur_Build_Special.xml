@@ -75,7 +75,7 @@
     <researchPrerequisites>
       <li>Resur_RelaxationKit</li>
     </researchPrerequisites>
-    <designationCategory>BEPFT_Building</designationCategory>
+    <designationCategory>BEP_Building</designationCategory>
   </ThingDef>
 
 </Defs>
