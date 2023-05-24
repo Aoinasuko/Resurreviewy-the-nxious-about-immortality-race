@@ -220,7 +220,7 @@
 				<body>BEPRaceCore/Race/Body/Resur/</body>
 				<skeleton>BEPRaceCore/Race/Bone/Bone</skeleton>
 				<skull>BEPRaceCore/Race/HeadBone/HeadBone</skull>
-				<skinShader>CutoutSkin</skinShader>
+				<skinShader>Cutout</skinShader>
 				<skinColor>(1,1,1,1)</skinColor>
 			</graphicPaths>
 			<styleSettings>
