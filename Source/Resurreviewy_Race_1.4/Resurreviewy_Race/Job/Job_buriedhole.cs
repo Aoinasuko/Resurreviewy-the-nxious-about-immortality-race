@@ -33,7 +33,6 @@ namespace Resurreviewy_Race
         protected override IEnumerable<Toil> MakeNewToils()
         {
             ToilFailConditions.FailOnDespawnedNullOrForbidden(this, TargetIndex.A);
-            ToilFailConditions.FailOnNotCasualInterruptible(this, TargetIndex.A);
             yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch);
             Toil wait = new Toil();
             wait.initAction = delegate ()
