@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <XenotypeDef>
+    <defName>Resur_Resurreviewy</defName>
+    <label>Resurreviewy</label>
+    <description>It is a basic Resurreviewy.</description>
+    <iconPath>BEPRaceCore/UI/Race/BEPRace</iconPath>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>BEP_BrilliancePower</li>
+      <li>BEP_Brilliance_Vitality</li>
+      <li>Mood_Pessimist</li>
+      <li>AptitudeStrong_Crafting</li>
+      <li>AptitudeStrong_Medicine</li>
+      <li>AptitudeStrong_Intellectual</li>
+    </genes>
+  </XenotypeDef>
+
+</Defs>

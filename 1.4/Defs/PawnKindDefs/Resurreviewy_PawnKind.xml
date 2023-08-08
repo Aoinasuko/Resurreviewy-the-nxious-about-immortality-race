@@ -37,6 +37,12 @@
 		<initialWillRange>0~1</initialWillRange>
 		<initialResistanceRange>1~3</initialResistanceRange>
 		<defaultFactionType>Resur_WildResurreviewy</defaultFactionType>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Resur_Resurreviewy MayRequire="Ludeon.RimWorld.Biotech">999</Resur_Resurreviewy>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
 	</PawnKindDef>
 	
 	<PawnKindDef>
@@ -75,6 +81,12 @@
 		<initialWillRange>0~1</initialWillRange>
 		<initialResistanceRange>1~3</initialResistanceRange>
 		<defaultFactionType>Resur_WildResurreviewy</defaultFactionType>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Resur_Resurreviewy MayRequire="Ludeon.RimWorld.Biotech">999</Resur_Resurreviewy>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
 	</PawnKindDef>
 	
 </Defs>

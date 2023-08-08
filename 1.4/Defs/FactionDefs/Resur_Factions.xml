@@ -35,7 +35,7 @@
     <settlementTexturePath>Resur/UI/Faction</settlementTexturePath>
     <xenotypeSet>
       <xenotypeChances>
-        <Baseliner MayRequire="Ludeon.RimWorld.Biotech">1.0</Baseliner>
+        <Resur_Resurreviewy MayRequire="Ludeon.RimWorld.Biotech">1</Resur_Resurreviewy>
       </xenotypeChances>
     </xenotypeSet>
     <modExtensions>
