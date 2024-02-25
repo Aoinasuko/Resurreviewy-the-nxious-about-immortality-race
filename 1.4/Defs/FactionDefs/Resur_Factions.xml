@@ -39,7 +39,7 @@
       </xenotypeChances>
     </xenotypeSet>
     <modExtensions>
-      <li Class="BEPRace_Core.BEPRace_FactionSetting">
+      <li Class="BEPRace_Core.BEPRace_FactionSetting" MayRequire="Ludeon.RimWorld.Ideology">
       </li>
     </modExtensions>
   </FactionDef>

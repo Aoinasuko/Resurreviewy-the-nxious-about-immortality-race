@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="Resur_BaseWeapon_Ranged" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>true</alwaysHaulable>
+    <tickerType>Normal</tickerType>
+    <tradeability>Sellable</tradeability>
+    <equipmentType>Primary</equipmentType>
+    <useHitPoints>true</useHitPoints>
+    <pathCost>14</pathCost>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+      <Beauty>0</Beauty>
+      <SellPriceFactor>0.20</SellPriceFactor>
+    </statBases>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+    <burnableByRecipe>true</burnableByRecipe>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <relicChance>0</relicChance>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    </recipeMaker>
+    <weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
+  </ThingDef>
+
+  <ThingDef ParentName="Resur_BaseWeapon_Ranged">
+    <defName>Resur_SoulPulsar</defName>
+    <label>Resur SoulPulsar</label>
+    <description>It is a sniper rifle dedicated to resurreviewy. However, this weapon does not attack with bullets. When fired, it releases three special energy rounds. When they land, a target is randomly selected from among enemies within a certain distance from that location, and a laser is emitted. Lasers inflict weak physical damage and damage that ignores any resistances.</description>
+    <graphicData>
+      <texPath>Resur/Thing/Weapon/SoulPulsar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <costList>
+      <Resur_BloodSyringe>3</Resur_BloodSyringe>
+      <Steel>100</Steel>
+      <Plasteel>50</Plasteel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <statBases>
+      <Mass>0.5</Mass>
+      <WorkToMake>24000</WorkToMake>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.90</AccuracyMedium>
+      <AccuracyLong>0.80</AccuracyLong>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <weaponTags>
+      <li>Resur_MidTier</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
+    <recipeMaker>
+      <recipeUsers>
+        <li>Resur_CraftTable</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>Resur_SoulWeapon</researchPrerequisite>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>45</range>
+        <warmupTime>2.0</warmupTime>
+        <noiseRadius>5</noiseRadius>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Resur_SoulBullet</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  <ThingDef>
+    <defName>Resur_SoulBullet</defName>
+    <label>SoulBullet</label>
+    <thingClass>Resurreviewy_Race.Projectile_SoulBullet</thingClass>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Resur/Thing/Weapon/SoulBullet</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <projectile>
+      <explosionRadius>10.9</explosionRadius >
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <speed>38</speed>
+      <arcHeightFactor>2</arcHeightFactor>
+      <shadowSize>0.4</shadowSize>
+      <explosionDelay>1</explosionDelay>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef>
+    <defName>Resur_SoulLaser</defName>
+    <label>Resur_SoulLaser</label>
+    <thingClass>Resurreviewy_Race.Projectile_SoulLaser</thingClass>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Projectile/Arrow_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <speed>25</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>Resur_Mote_Soul</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <solidTime>0</solidTime>
+      <fadeOutTime>0.2</fadeOutTime>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/BlastEMP</texPath>
+      <shaderType>Mote</shaderType>
+    </graphicData>
+  </ThingDef>
+
+
+</Defs>

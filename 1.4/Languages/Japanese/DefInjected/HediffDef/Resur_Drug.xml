@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Resur_BrilliaryAddiction.label>ブライアリィ中毒</Resur_BrilliaryAddiction.label>
+  <Resur_BrilliaryAddiction.description>リザレビューイの血液から製造されたドラッグの成分の中毒になった状態です. 離脱症状には肉体的な問題は無いものの,大きく心情が低下してしまいます.</Resur_BrilliaryAddiction.description>
+
+  <Resur_BrilliarySideEffect.label>輝薬症</Resur_BrilliarySideEffect.label>
+  <Resur_BrilliarySideEffect.description>運悪く,ブライアリィの副作用が発生してしまった状態です. この状態になったら最後,治癒することはできず永続的に発狂する症状に悩まされ最終的に死に至ります.</Resur_BrilliarySideEffect.description>
+
+  <Resur_BrilliaryTolerance.label>ブライアリィ耐性</Resur_BrilliaryTolerance.label>
+  <Resur_BrilliaryTolerance.description>リザレビューイの血液から製造されたドラッグに含まれる,ブライアリィと呼ばれる成分に対し耐性を得ている状態です.\n\nこの状態が付与されている場合,偶に輝薬症を発症してしまいます. 耐性がつけばつくほど,輝薬症の症状が出る確率が上昇します.</Resur_BrilliaryTolerance.description>
+
+  <Resur_Drug_A.label>フェイズティーバル</Resur_Drug_A.label>
+  <Resur_Drug_A.description>フェイズティーバルでハイになっている状態です. 輝きを高速で回復します.\n\nリトルフェアリーの場合FPを高速で回復します.</Resur_Drug_A.description>
+
+  <Resur_Drug_B.label>モアミルキー</Resur_Drug_B.label>
+  <Resur_Drug_B.description>モアミルキーでハイになっている状態です. 副産物を生成する種族の場合,高速で副産物を生成するようになります.</Resur_Drug_B.description>
+
+</LanguageData>

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
@@ -46,4 +47,30 @@ namespace Resurreviewy_Race
     {
         public static readonly Material Shield = MaterialPool.MatFrom("Other/ShieldBubble", ShaderDatabase.Transparent);
     }
+
+    public static class Resur_ExMethod
+    {
+        // 拡張メゾット
+        public static void AddResearchDirect(this ResearchManager manage)
+        {
+            FieldInfo field = manage.GetType().GetField("progress", BindingFlags.InvokeMethod | BindingFlags.NonPublic | BindingFlags.Instance);
+            Dictionary<ResearchProjectDef, float> projects = (Dictionary<ResearchProjectDef, float>)field.GetValue(manage);
+
+            ResearchProjectDef cproj = manage.currentProj;
+
+            float num = manage.GetProgress(cproj);
+            int addval = 1;
+            if (cproj.techLevel == TechLevel.Industrial)
+            {
+                addval = 2;
+            }
+            if (cproj.techLevel <= TechLevel.Medieval)
+            {
+                addval = 4;
+            }
+            num += addval;
+            projects[cproj] = Math.Min(cproj.CostApparent - 1.0f, num);
+        }
+    }
+
 }

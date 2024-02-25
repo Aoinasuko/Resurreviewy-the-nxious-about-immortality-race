@@ -20,6 +20,22 @@
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
+	    <defName>Resur_Assistance</defName>
+	    <label>Arithmetic Assistance</label>
+	    <description>To make very complex research as efficient as possible, you will be able to create a machine that will perform the research automatically at any time.</description>
+	    <baseCost>1500</baseCost>
+	    <techLevel>Industrial</techLevel>
+	    <tab>
+	      <li>Resur_Research</li>
+	    </tab>
+	    <prerequisites>
+	      <li>Resur_Knowledge</li>
+	    </prerequisites>
+	    <researchViewX>1</researchViewX>
+	    <researchViewY>4</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
 	    <defName>Resur_BloodAnalysis</defName>
 	    <label>Blood Analysis</label>
 	    <description>Resurreviewy analysis and will be able to process blood to create medicines that can heal minor wounds.</description>
@@ -49,6 +65,59 @@
 	    </prerequisites>
 	    <researchViewX>2</researchViewX>
 	    <researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+	    <defName>Resur_RelaxationKit</defName>
+	    <label>RelaxationKit</label>
+	    <description>You will be able to create psychic-style relaxation kits that temporarily elevate your mood.</description>
+	    <baseCost>2000</baseCost>
+	    <techLevel>Industrial</techLevel>
+	    <tab>
+	      <li>Resur_Research</li>
+	    </tab>
+	    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	    <requiredResearchFacilities>
+	      <li>MultiAnalyzer</li>
+	    </requiredResearchFacilities>
+	    <prerequisites>
+	      <li>Resur_BloodAnalysis</li>
+	    </prerequisites>
+	    <researchViewX>2</researchViewX>
+	    <researchViewY>4</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+	    <defName>Resur_Drug</defName>
+	    <label>Sacrificial Drugs</label>
+	    <description>Instead of being very powerful, it allows the creation of very dangerous drugs that can cause death with a single use.</description>
+	    <baseCost>1000</baseCost>
+	    <techLevel>Industrial</techLevel>
+	    <tab>
+	      <li>Resur_Research</li>
+	    </tab>
+	    <prerequisites>
+	      <li>DrugProduction</li>
+	      <li>Resur_BloodAnalysis</li>
+	    </prerequisites>
+	    <researchViewX>2</researchViewX>
+	    <researchViewY>5</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+	    <defName>Resur_BloodCollector</defName>
+	    <label>Blood Collector</label>
+	    <description>Once installed, the machine will be able to create a machine that automatically collects blood from the surrounding Resurreviewy. Although very time consuming, it can reduce the amount of materials used compared to normal collection.</description>
+	    <baseCost>1000</baseCost>
+	    <techLevel>Industrial</techLevel>
+	    <tab>
+	      <li>Resur_Research</li>
+	    </tab>
+	    <prerequisites>
+	      <li>Resur_BloodAnalysis</li>
+	    </prerequisites>
+	    <researchViewX>2</researchViewX>
+	    <researchViewY>6</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -108,10 +177,10 @@
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
-	    <defName>Resur_RelaxationKit</defName>
-	    <label>RelaxationKit</label>
-	    <description>You will be able to create psychic-style relaxation kits that temporarily elevate your mood.</description>
-	    <baseCost>3000</baseCost>
+	    <defName>Resur_SoulWeapon</defName>
+	    <label>Soul Weapons</label>
+	    <description>Only Resurreviewy will be able to create special weapons that can penetrate resistance and inflict damage.</description>
+	    <baseCost>1500</baseCost>
 	    <techLevel>Industrial</techLevel>
 	    <tab>
 	      <li>Resur_Research</li>
@@ -121,9 +190,10 @@
 	      <li>MultiAnalyzer</li>
 	    </requiredResearchFacilities>
 	    <prerequisites>
-	      <li>Resur_BloodAnalysis</li>
+	      <li>Gunsmithing</li>
+	      <li>Resur_RegenMedicine</li>
 	    </prerequisites>
-	    <researchViewX>2</researchViewX>
+	    <researchViewX>3</researchViewX>
 	    <researchViewY>4</researchViewY>
 	</ResearchProjectDef>
 	

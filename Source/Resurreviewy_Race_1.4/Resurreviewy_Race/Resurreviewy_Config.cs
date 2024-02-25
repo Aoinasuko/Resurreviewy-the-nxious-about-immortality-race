@@ -29,7 +29,7 @@ namespace Resurreviewy_Race
 	public class Resurreviewy_Config : ModSettings
 	{
 		// バージョン
-		public static int ver = 210;
+		public static int ver = 220;
 
 		// アップデートバージョン
 		public static int Updatever = 0;

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Resur_Drug_A.label>Resur フェイズティーバル</Resur_Drug_A.label>
+  <Resur_Drug_A.description>フェイズティーバルはかつてリトルフェアリー達の輝きの力を過度に使用しようとした人間が奴隷のリザレビューイと共に開発したドラッグです. このドラッグの効果時間中,『輝き』を高速で回復していきます. リトルフェアリーであれば効果時間中,FPも高速で回復します.\n\n&lt;color=#FF6666&gt;このドラッグは非常に強力ですが,成分に対して耐性を持っていると稀に『副作用』が発症する可能性があります. 『副作用』が発生した場合治癒することのできない発狂の症状に悩まされ,そして死に至ります.&lt;/color&gt;</Resur_Drug_A.description>
+  <Resur_Drug_A.ingestible.ingestCommandString>フェイズティーバルを使用する</Resur_Drug_A.ingestible.ingestCommandString>
+  <Resur_Drug_A.ingestible.ingestReportString>フェイズティーバルを使用している</Resur_Drug_A.ingestible.ingestReportString>
+  <Resur_Drug_A.ingestible.ingestReportStringEat>フェイズティーバルを使用している</Resur_Drug_A.ingestible.ingestReportStringEat>
+
+  <Resur_Drug_B.label>Resur モアミルキー</Resur_Drug_B.label>
+  <Resur_Drug_B.description>モアミルキーはかつてモフィーとスウィーティ達のミルクを多く生産しようとした人間が奴隷のリザレビューイと共に開発したドラッグです. このドラッグの効果時間中,副産物を生成する種族は高速で副産物を生成できるようになり,更に大きく心情が上昇します.\n\n&lt;color=#FF6666&gt;このドラッグは非常に強力ですが,成分に対して耐性を持っていると稀に『副作用』が発症する可能性があります. 『副作用』が発生した場合治癒することのできない発狂の症状に悩まされ,そして死に至ります.&lt;/color&gt;</Resur_Drug_B.description>
+  <Resur_Drug_B.ingestible.ingestCommandString>モアミルキーを使用する</Resur_Drug_B.ingestible.ingestCommandString>
+  <Resur_Drug_B.ingestible.ingestReportString>モアミルキーを使用している</Resur_Drug_B.ingestible.ingestReportString>
+  <Resur_Drug_B.ingestible.ingestReportStringEat>モアミルキーを使用している</Resur_Drug_B.ingestible.ingestReportStringEat>
+
+
+</LanguageData>

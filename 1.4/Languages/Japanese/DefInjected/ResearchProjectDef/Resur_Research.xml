@@ -4,6 +4,9 @@
   <Resur_Knowledge.label>知識</Resur_Knowledge.label>
   <Resur_Knowledge.description>リザレビューイの知識を学び,基礎的なアイテムを作成できるようになります.</Resur_Knowledge.description>
 
+  <Resur_Assistance.label>研究補助</Resur_Assistance.label>
+  <Resur_Assistance.description>膨大な量の研究を少しでも補助するために,自動で研究を少しずつ進めてくれる演算補助装置を制作できるようになります.</Resur_Assistance.description>
+
   <Resur_BloodAnalysis.label>血液分析</Resur_BloodAnalysis.label>
   <Resur_BloodAnalysis.description>リザレビューイの血液を分析し,軽い怪我を瞬時に治癒する医療器具を作成できるようになります.</Resur_BloodAnalysis.description>
 
@@ -13,14 +16,22 @@
   <Resur_RegenMedicine.label>再生医療</Resur_RegenMedicine.label>
   <Resur_RegenMedicine.description>更に深い怪我や,欠損を治癒する医療器具を作成できるようになります.</Resur_RegenMedicine.description>
 
+  <Resur_RelaxationKit.label>リラクゼーションキット</Resur_RelaxationKit.label>
+  <Resur_RelaxationKit.description>リザレビューイの血で動く,サイキック式の精神安定装置を作成できるようになります.</Resur_RelaxationKit.description>
+
+  <Resur_Drug.label>犠牲のドラッグ</Resur_Drug.label>
+  <Resur_Drug.description>リザレビューイの血から非常に強力なドラッグを作成できるようになります. しかしこれらのドラッグはその代償として1回の使用で永遠に発狂して死に至る可能性があります.</Resur_Drug.description>
+
+  <Resur_BloodCollector.label>血液回収</Resur_BloodCollector.label>
+  <Resur_BloodCollector.description>周囲にいるリザレビューイから自動的に血を採取してくれる機械を作成できるようになります. 専用の注射器が必要なのは変わりませんが,1つの注射器でより多くの血液を採取できるようになります.</Resur_BloodCollector.description>
+
   <Resur_ElixirofEternalLife.label>不老不死の薬</Resur_ElixirofEternalLife.label>
   <Resur_ElixirofEternalLife.description>リザレビューイ達と同等の不老不死の力を手に入れられる薬を作成できるようになります.</Resur_ElixirofEternalLife.description>
 
   <Resur_AntidoteofEternalLife.label>不老不死の解毒薬</Resur_AntidoteofEternalLife.label>
   <Resur_AntidoteofEternalLife.description>不老不死を"治癒"する解毒薬を作成できるようになります.</Resur_AntidoteofEternalLife.description>
 
-  <Resur_RelaxationKit.label>リラクゼーションキット</Resur_RelaxationKit.label>
-  <Resur_RelaxationKit.description>リザレビューイの血で動く,サイキック式の精神安定装置を作成できるようになります.</Resur_RelaxationKit.description>
-
+  <Resur_SoulWeapon.label>魂の武器</Resur_SoulWeapon.label>
+  <Resur_SoulWeapon.description>リザレビューイのみが装備可能な,特殊な狙撃銃を作成できるようになります.</Resur_SoulWeapon.description>
 
 </LanguageData>

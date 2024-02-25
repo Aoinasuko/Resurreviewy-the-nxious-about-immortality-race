@@ -304,6 +304,9 @@
       <workSkill>Intellectual</workSkill>
       <researchPrerequisite>Resur_ElixirofEternalLife</researchPrerequisite>
     </recipeMaker>
+    <descriptionHyperlinks>
+      <HediffDef>Resur_EternalLife</HediffDef>
+    </descriptionHyperlinks>
   </ThingDef>
 
   <ThingDef ParentName="Resur_HealItemBase">
@@ -351,6 +354,9 @@
       <workSkill>Intellectual</workSkill>
       <researchPrerequisite>Resur_AntidoteofEternalLife</researchPrerequisite>
     </recipeMaker>
+    <descriptionHyperlinks>
+      <HediffDef>Resur_Antidote_EternalLife</HediffDef>
+    </descriptionHyperlinks>
   </ThingDef>
 
 </Defs>

@@ -185,6 +185,9 @@
 		</li>
 	</verbs>
 	<colorGenerator Class="ColorGenerator_StandardApparel" />
+	<descriptionHyperlinks>
+		<HediffDef>Resur_EnhanceBelt</HediffDef>
+	</descriptionHyperlinks>
 </ThingDef>
 
 </Defs>

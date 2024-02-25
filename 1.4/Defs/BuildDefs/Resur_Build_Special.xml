@@ -22,9 +22,9 @@
       <li>BuildingsSpecial</li>
     </thingCategories>
     <costList>
-      <Steel>75</Steel>
-      <Plasteel>20</Plasteel>
-      <ComponentSpacer>10</ComponentSpacer>
+      <Steel>100</Steel>
+      <Plasteel>50</Plasteel>
+      <ComponentSpacer>5</ComponentSpacer>
     </costList>
     <comps>
       <li Class="Resurreviewy_Race.CompProperties_AddHediff">
@@ -57,7 +57,7 @@
       <Flammability>0</Flammability>
       <Beauty>0</Beauty>
       <Mass>15</Mass>
-      <WorkToBuild>2000</WorkToBuild>
+      <WorkToBuild>2800</WorkToBuild>
     </statBases>
     <fillPercent>0.2</fillPercent>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
@@ -75,6 +75,128 @@
     <researchPrerequisites>
       <li>Resur_RelaxationKit</li>
     </researchPrerequisites>
+    <designationCategory>BEP_Building</designationCategory>
+    <descriptionHyperlinks>
+      <HediffDef>Resur_Relaxation</HediffDef>
+    </descriptionHyperlinks>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Resur_Assistance</defName>
+    <label>Resur Arithmetic Assistance</label>
+    <description>It is a device that assists in research.\n\nThis is gradually perform the research on behalf of the settlers while the power is going through. The speed of progress of the research automatically performed depends on the technology level of the target research. The number of units installed is also effective when more than one is installed.\n\n[Attention]\nResearch cannot be completed with this device alone. In order to complete the research, it is necessary for the settler to perform the research work at the end.</description>
+    <size>(2,2)</size>
+    <receivesSignals>true</receivesSignals>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <MarketValue>2000</MarketValue>
+      <WorkToBuild>3200</WorkToBuild>
+      <Mass>50</Mass>
+    </statBases>
+    <designationCategory>BEP_Building</designationCategory>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Resur/Build/Misc/ArithmeticAssistance</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <rect>(0.2, 0.2, 0.6, 0.6)</rect>
+      </damageData>
+    </graphicData>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+    </building>
+    <thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+    <comps>
+      <li Class="Resurreviewy_Race.CompProperties_Assistance">
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1500</basePowerConsumption>
+      </li>
+    </comps>
+    <costList>
+      <Steel>200</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>Resur_Assistance</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Resur_BloodCollector</defName>
+    <label>Resur BloodCollector</label>
+    <description>This device is used to remotely collect a small amount of blood from Resurreviewy within range and generate blood syringe. It requires a syringe as fuel, but one syringe can generate up to 5 blood syringe.</description>
+    <graphicData>
+      <texPath>Resur/Build/Misc/BloodCollector</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1, 1)</drawSize>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+        <offset>(0.0, 0.0, -0.1)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.75,1.0,0.5)</rect>
+      </damageData>
+    </graphicData>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="Resurreviewy_Race.CompProperties_BloodCollecter"/>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>0</fuelConsumptionRate>
+        <fuelCapacity>1</fuelCapacity>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <fuelFilter>
+          <thingDefs>
+            <li>Resur_Syringe</li>
+          </thingDefs>
+        </fuelFilter>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <altitudeLayer>Building</altitudeLayer>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+    </building>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>0</Beauty>
+      <Mass>30</Mass>
+      <WorkToBuild>2400</WorkToBuild>
+    </statBases>
+    <fillPercent>0.2</fillPercent>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <pathCost>30</pathCost>
+    <passability>PassThroughOnly</passability>
+    <rotatable>false</rotatable>
+    <canOverlapZones>false</canOverlapZones>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <specialDisplayRadius>10.9</specialDisplayRadius>
+    <tradeability>Sellable</tradeability>
+    <tickerType>Normal</tickerType>
+    <tradeTags>
+      <li>ExoticBuilding</li>
+    </tradeTags>
+    <researchPrerequisites>
+      <li>Resur_BloodCollector</li>
+    </researchPrerequisites>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <designationCategory>BEP_Building</designationCategory>
   </ThingDef>
 

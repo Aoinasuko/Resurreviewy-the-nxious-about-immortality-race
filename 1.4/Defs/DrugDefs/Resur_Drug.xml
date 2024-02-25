@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- 輝薬 -->
+  <ChemicalDef>
+    <defName>Resur_Brilliary</defName>
+    <label>Brilliary</label>
+    <addictionHediff>Resur_BrilliaryAddiction</addictionHediff>
+    <toleranceHediff>Resur_BrilliaryTolerance</toleranceHediff>
+    <onGeneratedAddictedToleranceChance>0</onGeneratedAddictedToleranceChance>
+    <geneToleranceBuildupFactorResist>0.5</geneToleranceBuildupFactorResist>
+    <geneToleranceBuildupFactorImmune>0</geneToleranceBuildupFactorImmune>
+  </ChemicalDef>
+
+  <!-- 中毒 -->
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>Resur_ChemicalBrilliary</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>brilliary</label>
+    <description>Because of a brilliary dependence, this person needs to regularly consume the drug to avoid withdrawal symptoms.\n\nHowever, if additional brilliary is administered, it must be remembered that the subject is always at risk of death while the brilliary is in effect.</description>
+    <listPriority>745</listPriority>
+  </NeedDef>
+
+  <HediffDef ParentName="AddictionBase">
+    <defName>Resur_BrilliaryAddiction</defName>
+    <label>brilliary addiction</label>
+    <description>It is in a state of brilliary addiction. Although there are no negative physical effects, there are significant negative effects on the psyche.</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <causesNeed>Resur_ChemicalBrilliary</causesNeed>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.0333</severityPerDay>
+        <showDaysToRecover>true</showDaysToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>withdrawal</label>
+        <mentalStateGivers>
+          <li>
+            <mentalState>Binging_DrugMajor</mentalState>
+            <mtbDays>50</mtbDays>
+          </li>
+        </mentalStateGivers>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <ThoughtDef>
+    <defName>Resur_BrilliaryWithdrawal</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>Resur_BrilliaryAddiction</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>brilliary withdrawal</label>
+        <description>I want to taste the intervals when that brain is filled with brilliance and joy...</description>
+        <baseMoodEffect>-30</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- 副作用 -->
+  <HediffDef>
+    <defName>Resur_BrilliarySideEffect</defName>
+    <label>brilliary sideEffect</label>
+    <hediffClass>Hediff</hediffClass>
+    <defaultLabelColor>(0.4, 0.4, 0.4)</defaultLabelColor>
+    <description>Unluckily, a side effect of Brilliary has developed. The uncontrollable "brilliance" consumes the body, causing the victim to go insane and suffer. The last thing you want to do once you develop this condition is to lose your life in about three days without any treatment.</description>
+    <everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+        <painOffset>0.4</painOffset>
+        <lifeThreatening>true</lifeThreatening>
+        <deathMtbDays>3</deathMtbDays>
+        <mtbDeathDestroysBrain>true</mtbDeathDestroysBrain>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.5</setMax>
+          </li>
+        </capMods>
+        <mentalStateGivers>
+          <li>
+            <mentalState>Berserk</mentalState>
+            <mtbDays>0.01</mtbDays>
+          </li>
+        </mentalStateGivers>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <!-- 耐性 -->
+  <HediffDef ParentName="DrugToleranceBase">
+    <defName>Resur_BrilliaryTolerance</defName>
+    <label>brilliary tolerance</label>
+    <description>A built-up tolerance to brilliary. While the drug is tolerated, there is always a risk of side effects, but the probability of side effects increases as the drug is used more frequently and becomes tolerated.</description>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.015</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_DrugEffectFactor">
+        <chemical>Resur_Brilliary</chemical>
+      </li>
+    </comps>
+    <hediffGivers>
+      <li Class="HediffGiver_RandomDrugEffect">
+        <hediff>Resur_BrilliarySideEffect</hediff>
+        <severityToMtbDaysCurve>
+          <points>
+            <li>(0.01, 20)</li>
+            <li>(0.3, 20)</li>
+            <li>(0.5, 10)</li>
+            <li>(0.8, 5)</li>
+          </points>
+        </severityToMtbDaysCurve>
+        <countToAffect>1</countToAffect>
+      </li>
+    </hediffGivers>
+    <descriptionHyperlinks>
+      <HediffDef>Resur_BrilliarySideEffect</HediffDef>
+    </descriptionHyperlinks>
+  </HediffDef>
+
+  <!-- ドラッグベース -->
+  <ThingDef Name="Resur_DrugBase" ParentName="MakeableDrugBase" Abstract="True">
+    <descriptionHyperlinks>
+      <HediffDef>Resur_BrilliarySideEffect</HediffDef>
+      <HediffDef>Resur_BrilliaryTolerance</HediffDef>
+      <HediffDef>Resur_BrilliaryAddiction</HediffDef>
+    </descriptionHyperlinks>
+  </ThingDef>
+
+  <!-- フェイズティーバル -->
+  <ThingDef ParentName="Resur_DrugBase">
+    <defName>Resur_Drug_A</defName>
+    <label>Resur FeysTeaval</label>
+    <description>FeysTeaval is a drug developed by humans who once tried to overuse the sparkle power of LittleFairies. During the duration of the drug's effect, it rapidly restores radiance, and if you are a LittleFairy, it also rapidly restores FP during the duration of the drug's effect.\n\n&lt;color=#FF6666&gt;This drug is very powerful, but may cause rare "side effects" during its duration of tolerance. If a "side effect" occurs, the patient will suffer from symptoms of insanity that cannot be cured and will lead to death.&lt;/color&gt;</description>
+    <possessionCount>5</possessionCount>
+    <descriptionHyperlinks>
+      <HediffDef>Resur_Drug_A</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Resur/Thing/Drug/Drug_A</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>450</WorkToMake>
+      <MarketValue>20</MarketValue>
+      <Mass>0.05</Mass>
+      <DeteriorationRate>6</DeteriorationRate>
+      <Flammability>1.3</Flammability>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <foodType>Processed</foodType>
+      <joyKind>Chemical</joyKind>
+      <joy>0.80</joy>
+      <baseIngestTicks>80</baseIngestTicks>
+      <drugCategory>Hard</drugCategory>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>intake {0}</ingestCommandString>
+      <ingestReportString>intake {0}.</ingestReportString>
+      <ingestReportStringEat>Consuming {0}.</ingestReportStringEat>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Resur_Drug_A</hediffDef>
+          <severity>0.5</severity>
+          <toleranceChemical>Resur_Brilliary</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Resur_BrilliaryTolerance</hediffDef>
+          <severity>0.050</severity>
+          <divideByBodySize>true</divideByBodySize>
+          <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <productCount>4</productCount>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+      <researchPrerequisite>Resur_Drug</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <Resur_BloodSyringe>1</Resur_BloodSyringe>
+      <Neutroamine>2</Neutroamine>
+      <MedicineHerbal>5</MedicineHerbal>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Resur_Brilliary</chemical>
+        <addictiveness>0.05</addictiveness>
+        <existingAddictionSeverityOffset>0.50</existingAddictionSeverityOffset>
+        <needLevelOffset>0.9</needLevelOffset>
+        <listOrder>745</listOrder>
+        <overdoseSeverityOffset>0.03~0.05</overdoseSeverityOffset>
+        <largeOverdoseChance>0.001</largeOverdoseChance>
+      </li>
+    </comps>
+    <allowedArchonexusCount>50</allowedArchonexusCount>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>Resur_Drug_A</defName>
+    <label>feysteaval high</label>
+    <description>The effects of feysteaval are in effect in the body. You will feel strangely calm. It also has a very positive effect on the physical body, and the speed of recovery of the status related to "brilliance" is greatly increased.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="Resurreviewy_Race.HediffCompProperties_Drug_A">
+      </li>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.75</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <painOffset>-0.5</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>1.0</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.5</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <ThoughtDef>
+    <defName>Resur_Drug_A</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>Resur_Drug_A</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>high on feysteaval</label>
+        <description>I am happy to have a lot of warm feelings in my head along with light.</description>
+        <baseMoodEffect>20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- モアミルキー -->
+  <ThingDef ParentName="Resur_DrugBase">
+    <defName>Resur_Drug_B</defName>
+    <label>Resur Moremilky</label>
+    <description>Moremilky is a drug developed by humans trying to extract more milk from Mofy and Sweety. The ingested organisms would then distribute the nutrients obtained to the production of more milk. This allows them to produce milk faster, although they are more likely to go hungry. The drug also contains a tremendous concentration of euphoria, and even if the organism does not produce milk, it will be filled with a sense of well-being that will shake off most of its sorrows.\n\n&lt;color=#FF6666&gt;This drug is very powerful, but may cause rare "side effects" during its duration of tolerance. If a "side effect" occurs, the patient will suffer from symptoms of insanity that cannot be cured and will lead to death.&lt;/color&gt;</description>
+    <possessionCount>5</possessionCount>
+    <descriptionHyperlinks>
+      <HediffDef>Resur_Drug_B</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Resur/Thing/Drug/Drug_B</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>450</WorkToMake>
+      <MarketValue>20</MarketValue>
+      <Mass>0.05</Mass>
+      <DeteriorationRate>6</DeteriorationRate>
+      <Flammability>1.3</Flammability>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <foodType>Processed</foodType>
+      <joyKind>Chemical</joyKind>
+      <joy>0.80</joy>
+      <baseIngestTicks>80</baseIngestTicks>
+      <drugCategory>Hard</drugCategory>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>intake {0}</ingestCommandString>
+      <ingestReportString>intake {0}.</ingestReportString>
+      <ingestReportStringEat>Consuming {0}.</ingestReportStringEat>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Resur_Drug_B</hediffDef>
+          <severity>0.5</severity>
+          <toleranceChemical>Resur_Brilliary</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Resur_BrilliaryTolerance</hediffDef>
+          <severity>0.050</severity>
+          <divideByBodySize>true</divideByBodySize>
+          <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <productCount>4</productCount>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+      <researchPrerequisite>Resur_Drug</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <Resur_BloodSyringe>1</Resur_BloodSyringe>
+      <Neutroamine>2</Neutroamine>
+      <MedicineHerbal>5</MedicineHerbal>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Resur_Brilliary</chemical>
+        <addictiveness>0.05</addictiveness>
+        <existingAddictionSeverityOffset>0.50</existingAddictionSeverityOffset>
+        <needLevelOffset>0.9</needLevelOffset>
+        <listOrder>745</listOrder>
+        <overdoseSeverityOffset>0.03~0.05</overdoseSeverityOffset>
+        <largeOverdoseChance>0.001</largeOverdoseChance>
+      </li>
+    </comps>
+    <allowedArchonexusCount>50</allowedArchonexusCount>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>Resur_Drug_B</defName>
+    <label>moremilky high</label>
+    <description>The effects of moremilky are in effect in the body. They have a great sense of well-being and are able to work more efficiently, as well as produce milk at a faster rate if they are of a race that can produce milk.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="Resurreviewy_Race.HediffCompProperties_Drug_B">
+      </li>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.75</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <hungerRateFactorOffset>1.1</hungerRateFactorOffset>
+        <statFactors>
+            <WorkSpeedGlobal>1.5</WorkSpeedGlobal>
+            <Fertility MayRequire="Ludeon.RimWorld.Biotech">1.5</Fertility>
+        </statFactors>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.3</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <ThoughtDef>
+    <defName>Resur_Drug_B</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>Resur_Drug_B</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>high on moremilky</label>
+        <description>I am happy to have a lot of warm feelings in my head along with light.</description>
+        <baseMoodEffect>40</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

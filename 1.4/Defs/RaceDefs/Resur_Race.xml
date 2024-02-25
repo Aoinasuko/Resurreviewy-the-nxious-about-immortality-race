@@ -220,6 +220,7 @@
 				<body>BEPRaceCore/Race/Body/Resur/</body>
 				<skeleton>BEPRaceCore/Race/Bone/Bone</skeleton>
 				<skull>BEPRaceCore/Race/HeadBone/HeadBone</skull>
+				<swaddle>BEPRaceCore/Race/Dummy/Dummy</swaddle>
 				<skinShader>Cutout</skinShader>
 				<skinColor>(1,1,1,1)</skinColor>
 			</graphicPaths>
@@ -250,6 +251,9 @@
 			</relationSettings>
 			<raceRestriction>
 				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+				<weaponList>
+					<li>Resur_SoulPulsar</li>
+				</weaponList>
 				<apparelList>
 				</apparelList>
 				<blackGeneList>
@@ -520,6 +524,7 @@
 		<defName>Resurreviewy_Child</defName>
 		<label>Resurreviewy Child</label>
 		<reproductive>false</reproductive>
+		<workerClass MayRequire="Ludeon.RimWorld.Biotech">LifeStageWorker_HumanlikeChild</workerClass>
 		<visible>false</visible>
 		<developmentalStage>Child</developmentalStage>
 		<statFactors>
@@ -533,6 +538,7 @@
 		<defName>Resurreviewy_Adult</defName>
 		<label>Resurreviewy Adult</label>
 		<reproductive>true</reproductive>
+		<workerClass MayRequire="Ludeon.RimWorld.Biotech">LifeStageWorker_HumanlikeAdult</workerClass>
 		<visible>false</visible>
 		<developmentalStage>Adult</developmentalStage>
 	</LifeStageDef>

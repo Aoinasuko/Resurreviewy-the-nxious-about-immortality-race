@@ -4,5 +4,10 @@
   <Resur_RelaxationKit.label>Resur リラクゼーションキット</Resur_RelaxationKit.label>
   <Resur_RelaxationKit.description>リザレビューイの血を動力源として動くサイキック式の精神安定装置です.\n周囲の種族の精神を安定させます.</Resur_RelaxationKit.description>
 
+  <Resur_Assistance.label>Resur 演算補助装置</Resur_Assistance.label>
+  <Resur_Assistance.description>かつてリザレビューイを生み出した人間が,より効率的に研究を行おうと作り出した装置を再現したものです. 膨大な研究を処理することに特化したコンピュータが,自動で研究を行ってくれます.\n\n電力が通っている間,現在選択中の研究を少しずつ進めます. 研究を進める速度はその研究の技術レベルに依存します. また複数台設置することでその数分効果を発揮します.\n\nこの装置では研究完了直前までしか研究を行うことはできません. そのため誰か1人は研究を行える人物を用意する必要があります.</Resur_Assistance.description>
+
+  <Resur_BloodCollector.label>Resur 血液回収装置</Resur_BloodCollector.label>
+  <Resur_BloodCollector.description>周囲にいるリザレビューイの血を少しずつ遠隔で回収を行い,血液注射を作り出す装置です. 回収速度は周囲にいるリザレビューイの数に依存します.\n\n燃料として注射が必要ですが,この機械は1つの注射で5つまで血液注射を生産してくれます.</Resur_BloodCollector.description>
 
 </LanguageData>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Resur_SoulPulsar.label>Resur ソウルパルサー</Resur_SoulPulsar.label>
+  <Resur_SoulPulsar.description>リザレビューイ専用の狙撃銃です,しかしこの武器は弾丸で攻撃を行いません.\n\n射撃を行うと特殊なエネルギー弾を3発放ちます,着弾するとその場所から一定距離内にいる敵の中からランダムでターゲットが選択されてレーザーが放出されます. レーザーは弱い物理的なダメージと,シールドを含めたあらゆる耐性を無視するやけどダメージを付与します.</Resur_SoulPulsar.description>
+
+  <Resur_SoulBullet.label>ソウルバレット</Resur_SoulBullet.label>
+
+  <Resur_SoulLaser.label>ソウルレーザー</Resur_SoulLaser.label>
+
+</LanguageData>
