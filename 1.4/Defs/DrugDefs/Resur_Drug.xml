@@ -357,7 +357,7 @@
     </comps>
     <stages>
       <li>
-        <hungerRateFactorOffset>1.1</hungerRateFactorOffset>
+        <hungerRateFactorOffset>0.3</hungerRateFactorOffset>
         <statFactors>
             <WorkSpeedGlobal>1.5</WorkSpeedGlobal>
             <Fertility MayRequire="Ludeon.RimWorld.Biotech">1.5</Fertility>
