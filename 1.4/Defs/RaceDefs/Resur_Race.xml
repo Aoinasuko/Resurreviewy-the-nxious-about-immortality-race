@@ -214,6 +214,13 @@
 					<li>3</li>
 					<li>5</li>
 				</growthAges>
+				<growthFactorByAge>
+					<points>
+						<li>(0,5)</li>
+						<li>(3,3)</li>
+						<li>(5,1)</li>
+					</points>
+				</growthFactorByAge>
 			</generalSettings>
 			<graphicPaths>
 				<head>BEPRaceCore/Race/Head/Average_Normal</head>
